@@ -1,0 +1,123 @@
+@each $name, $value in $breakpoints {
+  @if $name != '' {
+    $name: $name+'-'
+  }
+  @include media($value) {
+    .#{$name}txt- {
+      &l {
+        text-align: left;
+      }
+
+      &r {
+        text-align: right;
+      }
+
+      &c {
+        text-align: center;
+      }
+    }
+    .#{$name}c-list {
+      list-style: none;
+    }
+    .#{$name}d- {
+      &none {
+        display: none;
+      }
+
+      &block {
+        display: block;
+      }
+    }
+    .#{$name}p- {
+      &absolute {
+        position: absolute;
+      }
+
+      &static {
+        position: static;
+      }
+
+      &relative {
+        position: relative;
+      }
+
+      &sticky {
+        position: sticky;
+      }
+
+      &fixed {
+        position: fixed;
+      }
+    }
+
+    @for $i from 0 through 20 {
+      .#{$name}m {
+        &-#{$i} {
+          margin: $s_space * $i;
+        }
+
+        &b-#{$i} {
+          margin: {
+            bottom: $s_space * $i !important;
+          };
+        }
+
+        &t-#{$i} {
+          margin: {
+            top: $s_space * $i;
+          };
+        }
+
+        &l-#{$i} {
+          margin: {
+            left: $s_space * $i;
+          };
+        }
+
+        &r-#{$i} {
+          margin: {
+            right: $s_space * $i;
+          };
+        }
+      }
+      .#{$name}p {
+        &-#{$i} {
+          padding: $s_space * $i;
+        }
+
+        &b-#{$i} {
+          padding: {
+            bottom: $s_space * $i;
+          };
+        }
+
+        &t-#{$i} {
+          padding: {
+            top: $s_space * $i;
+          };
+        }
+
+        &l-#{$i} {
+          padding: {
+            left: $s_space * $i;
+          };
+        }
+
+        &r-#{$i} {
+          padding: {
+            right: $s_space * $i;
+          };
+        }
+      }
+    }
+  }
+}
+.fit {
+  &-width {
+    width: fit-content !important;
+  }
+
+  &-height {
+    height: fit-content !important;
+  }
+}
