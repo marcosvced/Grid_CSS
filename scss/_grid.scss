@@ -1,98 +1,14 @@
+@import "mixins/grid";
 .container {
   max-width: 1280px;
-  width: 100%;
+  width: 90%;
   margin: auto;
 }
 
 @each $name, $value in $breakpoints {
-  $col-number: 0;
   @include media($value) {
-    @for $i from 1 through $number-cols {
-      $col-number: $col-number + 1;
-      @if $name == '' {
-        .col-#{$col-number} {
-          width: 100% / ($number-cols/$i);
-        }
-        .col-offset-#{$col-number} {
-          margin-left: 100% / ($number-cols/$i);
-        }
-        .order-#{$col-number} {
-          order: $col-number;
-        }
-      } @else {
-        .#{$name}-col-#{$col-number} {
-          width: 100% / ($number-cols/$i)
-        }
-        .#{$name}-col-offset-#{$col-number} {
-          margin-left: 100% / ($number-cols/$i);
-        }
-        .#{$name}-order-#{$col-number} {
-          order: $col-number;
-        }
-
-      }
-    }
-  }
-}
-
-
-@each $name, $value in $breakpoints {
-  @if $name != '' {
-    $name: $name+'-'
-  }
-  @include media($value) {
-    .#{$name}f {
-      &-row {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-      }
-
-      &-column {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-      }
-
-      &-row-reverse {
-        display: flex;
-        flex-direction: row-reverse;
-        flex-wrap: nowrap;
-      }
-
-      &-column-reverse {
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: nowrap;
-      }
-
-      &-wrap {
-        flex-wrap: wrap;
-      }
-
-      &-aic {
-        align-items: center;
-      }
-      &-aib {
-        align-items: baseline;
-      }
-
-      &-aife {
-        align-items: flex-end;
-      }
-
-      &-jcc {
-        justify-content: center;
-      }
-
-      &-jcsb {
-        justify-content: space-between;
-      }
-
-      &-jcsa {
-        justify-content: space-around;
-      }
-    }
+    @include create-columns(if($name == '', 'col-', '#{$name}-col-'), $number-of-columns);
+    @include display(if($name != '', '#{$name}-', ''));
   }
 }
 
