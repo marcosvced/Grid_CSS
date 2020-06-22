@@ -1,45 +1,86 @@
 @mixin create-columns($column, $number-of-columns) {
-  $column-number: 0;
-  @for $i from 1 through $number-of-columns {
-    $column-number: $column-number + 1;
-    .#{$column}#{$column-number} {
-      width: 100% / ($number-of-columns/$i)
+  @for $column-number from 1 through $number-of-columns {
+    .#{$column}-#{$column-number} {
+      --col-size-with-gap: #{column-with-gap($grid_gutter, $number-of-columns, $column-number)};
+      --col-size-without-gap: #{column-without-gap($number-of-columns, $column-number)};
     }
-    .#{$column}offset-#{$column-number} {
-      margin-left: 100% / ($number-of-columns/$i);
+    .#{$column}-offset-#{$column-number} {
+      --offset-with-gap: #{offset-with-gap($grid_gutter, $number-of-columns, $column-number)};
+      --offset-without-gap: #{offset-without-gap($number-of-columns, $column-number)};
     }
-    .#{$column}order-#{$column-number} {
+    .#{$column}-order-#{$column-number} {
       order: $column-number;
     }
   }
-  .#{$column}fit-content {
+  .#{$column}-fit-content {
     width: fit-content;
+  }
+
+  [class*='-col-'] {
+    width: calc(var(--col-size-without-gap));
+  }
+  [class*='-col-offset-'] {
+    margin-left: var(--offset-with-gap);
   }
 }
 
 @mixin display($prefix) {
-  .#{$prefix}d- {
-    &flex {
+  .#{$prefix}-display- {
+    &row {
       display: flex;
+      flex-direction: row;
 
-      &-row {
+      &-reverse {
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
 
-        &-reverse {
+        &-gap {
           display: flex;
-          flex-direction: row-reverse;
+          flex-direction: row;
+
+          & > [class*='-col-'] {
+            width: var(--col-size-with-gap);
+
+            &:not(:last-child) {
+              margin: {
+                right: $grid_gutter;
+              };
+            }
+          }
+
+          & > [class*='-offset-'] {
+            margin-left: var(--offset-with-gap);
+          }
         }
       }
 
-      &-column {
+      &-gap {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
 
-        &-reverse {
-          display: flex;
-          flex-direction: column-reverse;
+        & > [class*='-col-'] {
+          width: var(--col-size-with-gap);
+
+          &:not(:last-child) {
+            margin: {
+              right: $grid_gutter;
+            };
+          }
         }
+
+        & > [class*='-offset-'] {
+          margin-left: var(--offset-with-gap);
+        }
+      }
+    }
+
+    &column {
+      display: flex;
+      flex-direction: column;
+
+      &-reverse {
+        display: flex;
+        flex-direction: column-reverse;
       }
     }
 
@@ -51,8 +92,11 @@
       display: block;
     }
   }
-  [class*="d-flex"] {
-    &.#{$prefix}align {
+}
+
+@mixin flex($prefix) {
+  [class*="-display-row"] {
+    &.#{$prefix}-align {
       &-center {
         align-items: center;
       }
@@ -66,7 +110,7 @@
       }
     }
 
-    &.#{$prefix}justify {
+    &.#{$prefix}-justify {
       &-center {
         justify-content: center;
       }
@@ -85,14 +129,14 @@
       }
     }
 
-    &.#{$prefix}wrap {
+    &.#{$prefix}-wrap {
       flex-wrap: wrap;
     }
   }
 }
 
 @mixin tools($prefix,$space) {
-  .#{$prefix}text- {
+  .#{$prefix}-text- {
     &left {
       text-align: left;
     }
@@ -105,7 +149,7 @@
       text-align: center;
     }
   }
-  .#{$prefix}position- {
+  .#{$prefix}-position- {
     &absolute {
       position: absolute;
     }
@@ -127,14 +171,14 @@
     }
   }
   @for $i from 0 through 20 {
-    .#{$prefix}m {
+    .#{$prefix}-m {
       &-#{$i} {
         margin: $space * $i;
       }
 
       &b-#{$i} {
         margin: {
-          bottom: $space * $i !important;
+          bottom: $space * $i;
         };
       }
 
@@ -156,8 +200,7 @@
         };
       }
     }
-
-    .#{$prefix}p {
+    .#{$prefix}-p {
       &-#{$i} {
         padding: $space * $i;
       }
@@ -188,3 +231,4 @@
     }
   }
 }
+

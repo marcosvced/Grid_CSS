@@ -1,14 +1,23 @@
 @import "mixins/grid";
-.container {
-  max-width: 1280px;
-  width: 90%;
-  margin: auto;
+
+.o-container {
+  max-width: map-get($breakpoints, 'lg');
+  padding-left: 3%;
+  padding-right: 3%;
+  margin: {
+    left: auto;
+    right: auto
+  };
+
+  * {
+    box-sizing: border-box;
+  }
 }
 
 @each $name, $value in $breakpoints {
   @include media($value) {
-    @include create-columns(if($name == '', 'col-', '#{$name}-col-'), $number-of-columns);
-    @include display(if($name != '', '#{$name}-', ''));
+    @include create-columns(if($name == '', '-col', '-#{$name}-col'), $number-of-columns);
+    @include display(if($name != '', '-#{$name}', ''));
+    @include flex(if($name != '', '-#{$name}', ''));
   }
 }
-

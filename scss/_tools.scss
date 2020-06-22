@@ -1,6 +1,7 @@
 @import "mixins/grid";
+
 @each $name, $value in $breakpoints {
   @include media($value) {
-    @include tools(if($name != '', '#{$name}-', ''),$s_gap);
+    @include tools(if($name != '', '#{$name}-', ''), $grid_gutter);
   }
 }
