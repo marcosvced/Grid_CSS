@@ -11,5 +11,6 @@
     <orderEntry type="library" name="vue" level="application" />
     <orderEntry type="library" name="normalize" level="application" />
     <orderEntry type="library" name="modern-normalize" level="application" />
+    <orderEntry type="library" name="feather-icons" level="application" />
   </component>
 </module>

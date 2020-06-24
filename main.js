@@ -1,3 +1,10 @@
 new Vue({
-    el: '#app'
+    el: '#app',
+    components: {
+        OHero,
+        OGutter,
+        ONoGutter,
+        OBreakpoints,
+        OWrap
+    }
 })

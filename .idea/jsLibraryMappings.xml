@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{modern-normalize, normalize, vue}" />
+    <file url="PROJECT" libraries="{feather-icons, modern-normalize, normalize, vue}" />
+    <includedPredefinedLibrary name="Node.js Core" />
   </component>
 </project>
