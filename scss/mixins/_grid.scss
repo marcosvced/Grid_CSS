@@ -12,16 +12,6 @@
       order: $column-number;
     }
   }
-  .#{$column}-fit-content {
-    width: fit-content;
-  }
-
-  [class*='-col-'] {
-    width: calc(var(--col-size-without-gap));
-  }
-  [class*='-col-offset-'] {
-    margin-left: var(--offset-with-gap);
-  }
 }
 
 @mixin display($prefix) {
@@ -135,7 +125,10 @@
   }
 }
 
-@mixin tools($prefix,$space) {
+@mixin utilities($prefix, $space) {
+  .#{$prefix}-fit-content {
+    width: fit-content;
+  }
   .#{$prefix}-text- {
     &left {
       text-align: left;

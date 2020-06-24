@@ -1,6 +1,7 @@
 @import "mixins/grid";
 
-.o-container {
+.o-container,
+[class*='-container'] {
   max-width: map-get($breakpoints, 'lg');
   padding-left: 3%;
   padding-right: 3%;
@@ -15,9 +16,16 @@
 }
 
 @each $name, $value in $breakpoints {
-  @include media($value) {
+  @include size($name) {
     @include create-columns(if($name == '', '-col', '-#{$name}-col'), $number-of-columns);
     @include display(if($name != '', '-#{$name}', ''));
     @include flex(if($name != '', '-#{$name}', ''));
   }
+}
+
+[class*='-col-'] {
+  width: calc(var(--col-size-without-gap));
+}
+[class*='-col-offset-'] {
+  margin-left: var(--offset-with-gap);
 }

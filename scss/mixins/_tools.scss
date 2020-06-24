@@ -2,8 +2,6 @@
   height: $size;
   width: $size;
 }
-
-
 /* Font Face */
 
 @mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
