@@ -1,0 +1,23 @@
+.o-hero {
+    background-color: var(--c-medium-dark);
+}
+
+.m-hero__wrapper {
+    padding-top: 7vh;
+    padding-bottom: calc(25vh + 3rem);
+}
+
+.o-hero .a-hero__title {
+    position: relative;
+    padding-bottom: 5vh;
+    margin-bottom: 5vh;
+}
+
+.o-hero .a-hero__title:before {
+    content: "";
+    height: 10px;
+    width: 70px;
+    background: var(--c-primary);
+    position: absolute;
+    bottom: 0;
+}

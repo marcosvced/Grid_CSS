@@ -1,0 +1,53 @@
+:root {
+    --c-primary: #ffaf29;
+    --c-light: #ebebec;
+    --c-medium-light: #424657;
+    --c-dark: #252734;
+    --c-medium-dark: #333646;
+    --border-radius: 5px;
+    --icon-url: '';
+    --h1-size: 7rem;
+    --h2-size: 2.25rem;
+    --logo-size: 50px;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--c-dark);
+    font-family: Lato, sans-serif;
+    color: var(--c-light);
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: clamp(3rem, 6.5vw, var(--h1-size));
+    line-height: 1;
+    margin: 0;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: var(--h2-size);
+    margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--c-dark);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--c-primary);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--c-medium-light);
+}

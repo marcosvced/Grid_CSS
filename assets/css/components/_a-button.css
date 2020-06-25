@@ -1,0 +1,24 @@
+.a-button.-btn-link {
+    text-decoration: none;
+    background-color: var(--c-primary);
+    color: var(--c-light);
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+    padding: .75rem 1.5rem .75rem 1.5rem;
+    border-radius: var(--border-radius);
+}
+
+.a-button.-btn-link .a-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 1.5rem;
+    transition: margin-left .3s ease-in-out;
+}
+
+.a-button.-btn-link:hover .a-icon {
+    margin-left: 3rem;
+}
+

@@ -2,6 +2,6 @@
 
 @each $name, $value in $breakpoints {
   @include media($value) {
-    @include utilities(if($name != '', '#{$name}-', ''), $grid_gutter);
+    @include utilities(if($name != '', '-#{$name}', ''), $grid_gutter);
   }
 }

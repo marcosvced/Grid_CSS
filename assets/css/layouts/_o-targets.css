@@ -1,0 +1,26 @@
+.o-targets {
+    margin-top: -15rem;
+}
+
+.o-targets .m-target__wrapper {
+    background-color: var(--c-medium-light);
+    border-radius: var(--border-radius);
+    /*padding: 10rem 3rem 3rem;*/
+}
+
+.o-targets [class*='a-icon'] {
+    height: 45px;
+    width: 45px;
+    min-width: 45px;
+}
+
+.a-target__title {
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin: 0 0 .75rem 0;
+}
+
+.a-target__subtitle {
+    opacity: .65;
+    font-size: .875rem;
+}

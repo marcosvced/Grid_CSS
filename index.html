@@ -7,215 +7,33 @@
     <link rel="icon" href="assets/favicon.ico">
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"/>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/vendor/main.css">
+    <link rel="stylesheet" href="assets/css/index.css">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-    <style>
-        :root {
-            --c-primary: #ffaf29;
-            --c-light: #ebebec;
-            --c-medium-light: #424657;
-            --c-dark: #252734;
-            --c-medium-dark: #333646;
-            --border-radius: 5px;
-            --icon-url: '';
-        }
 
-        body {
-            overflow-x: hidden;
-            background-color: var(--c-dark);
-            font-family: Lato, sans-serif;
-            color: var(--c-light);
-            line-height: 1.4;
-        }
-
-        h1 {
-            font-size: 5rem;
-            margin: 0;
-        }
-
-        h2 {
-            font-weight: normal;
-        }
-
-        .o-hero {
-            background-color: var(--c-medium-dark);
-        }
-
-        .m-hero__wrapper {
-            padding-top: 25vh;
-            padding-bottom: calc(25vh + 3rem);
-        }
-
-        .o-hero .a-hero__title {
-            position: relative;
-            padding-bottom: 5vh;
-        }
-
-        .o-hero .a-hero__title:before {
-            content: "";
-            height: 10px;
-            width: 70px;
-            background: var(--c-primary);
-            position: absolute;
-            bottom: 0;
-        }
-
-        .o-targets {
-            margin-top: -15rem;
-        }
-
-        .o-targets .m-target__wrapper {
-            background-color: var(--c-medium-light);
-            border-radius: var(--border-radius);
-            padding: 13rem 3rem 3rem;
-        }
-
-        .o-targets [class*='a-icon'] {
-            display: block;
-            background-image: var(--icon-url);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            height: 50px;
-            width: auto;
-            min-width: 50px;
-        }
-
-        .a-icon.-feather {
-            --icon-url: url(assets/icons/feather.svg);
-        }
-
-        .a-icon.-pen-tool {
-            --icon-url: url(assets/icons/pen-tool.svg);
-        }
-
-        .a-icon.-watch {
-            --icon-url: url(assets/icons/watch.svg);
-        }
-
-        .a-target__title {
-            font-size: 1.75rem;
-            font-weight: 600;
-            margin: 0 0 .75rem 0;
-        }
-
-        .a-target__subtitle {
-            opacity: .75;
-            font-size: .875rem;
-        }
-
-        .a-box {
-            background: var(--c-medium-light);
-            min-height: 100px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background-color .4s ease-in-out;
-            margin-bottom: .75rem;
-        }
-
-        .a-text {
-            padding: .75rem;
-            background: var(--c-medium-light);
-            transition: background-color .4s ease-in-out;
-        }
-
-        .a-box:hover, .a-text:hover {
-            background-color: var(--c-primary);
-        }
-
-        .a-box > p {
-            font-weight: 600;
-        }
-
-        .a-text.-radius,
-        .a-box.-radius {
-            border-radius: var(--border-radius);
-        }
-
-        .a-box.-bordered {
-            border: 1px solid var(--c-dark);
-        }
-
-        .a-box.-bordered:first-child {
-            border-bottom-left-radius: var(--border-radius);
-            border-top-left-radius: var(--border-radius);
-        }
-
-        .a-box.-bordered:last-child {
-            border-bottom-right-radius: var(--border-radius);
-            border-top-right-radius: var(--border-radius);
-        }
-
-        /* width */
-        ::-webkit-scrollbar {
-            width: 5px;
-        }
-
-        /* Track */
-        ::-webkit-scrollbar-track {
-            background: var(--c-dark);
-        }
-
-        /* Handle */
-        ::-webkit-scrollbar-thumb {
-            background: var(--c-primary);
-        }
-
-        /* Handle on hover */
-        ::-webkit-scrollbar-thumb:hover {
-            background: var(--c-medium-light);
-        }
-    </style>
 </head>
 <body>
 <div id="app">
-
+    <o-header></o-header>
     <o-hero></o-hero>
-    <section class="o-targets -container -display-column -md-display-row -mb-5">
-        <div class="m-target__wrapper -display-row -mr-2 -col-12 -md-col-4">
-            <i class="a-icon -feather -mr-3"></i>
-            <div class="m-target__info">
-                <h2 class="a-target__title">
-                    Light <br/> as a feather.
-                </h2>
-                <p class="a-target__subtitle">
-                    Only ~ 75 kb built with Mobile First Design in mind.
-                </p>
-            </div>
-        </div>
-        <div class="m-target__wrapper -display-row -mr-2 -col-12 -md-col-4">
-            <i class="a-icon -pen-tool -mr-3"></i>
-            <div class="m-target__info">
-                <h2 class="a-target__title">
-                    Flexibility <br/> and quality.
-                </h2>
-                <p class="a-target__subtitle">
-                    Styles designed for flexibility and quality, not a user interface framework.
-                </p>
-            </div>
-        </div>
-        <div class="m-target__wrapper -display-row -col-12 -md-col-4">
-            <i class="a-icon -watch -mr-3"></i>
-            <div class="m-target__info">
-                <h2 class="a-target__title">
-                    Easy <br/> quick start.
-                </h2>
-                <p class="a-target__subtitle">
-                    Quick start without compiling and installing. No JS, no Third party libraries.
-                </p>
-            </div>
-        </div>
-    </section>
-    <o-gutter></o-gutter>
-    <o-no-gutter></o-no-gutter>
-    <o-breakpoints></o-breakpoints>
-    <o-wrap></o-wrap>
-    <o-text></o-text>
+    <o-targets></o-targets>
+    <div id="layout">
+        <o-gutter></o-gutter>
+        <o-no-gutter></o-no-gutter>
+    </div>
+    <div id="responsive">
+        <o-breakpoints></o-breakpoints>
+    </div>
+    <div id="modifiers">
+        <o-wrap></o-wrap>
+        <o-text></o-text>
+    </div>
 </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script src="components/o-header.js"></script>
 <script src="components/o-hero.js"></script>
+<script src="components/o-targets.js"></script>
 <script src="components/o-gutter.js"></script>
 <script src="components/o-no-gutter.js"></script>
 <script src="components/o-breakpoints.js"></script>

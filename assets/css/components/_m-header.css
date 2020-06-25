@@ -1,0 +1,21 @@
+.m-header .a-header__abstract {
+    position: relative;
+    padding-left: 1.5rem;
+    color: var(--c-light);
+    opacity: .5;
+}
+.m-header .a-header__abstract:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    height: 2px;
+    width: 10px;
+    background-color: var(--c-light);
+    opacity: .5;
+}
+.m-header .a-header__description {
+    opacity: .65;
+}

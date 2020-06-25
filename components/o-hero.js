@@ -5,6 +5,7 @@ const OHero = Vue.component('o-hero', {
             <h1 class="a-hero__title">
                 Atomic<br/> Design CSS Grid
             </h1>
+            <a class="a-button -btn-link" href="https://github.com/marcosvced/Grid_CSS" target="_blank">Download <i class="a-icon -arrow-right"></i> </a>
         </div>
     </section>
     `

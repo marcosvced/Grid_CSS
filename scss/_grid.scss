@@ -9,6 +9,7 @@
     left: auto;
     right: auto
   };
+  box-sizing: content-box;
 
   * {
     box-sizing: border-box;
@@ -26,6 +27,7 @@
 [class*='-col-'] {
   width: calc(var(--col-size-without-gap));
 }
+
 [class*='-col-offset-'] {
   margin-left: var(--offset-with-gap);
 }
