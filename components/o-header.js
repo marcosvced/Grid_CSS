@@ -3,7 +3,7 @@ const OHeader = Vue.component('o-header', {
      <header class="o-header -md-position-sticky">
         <div class="m-header__wrapper -container -display-row -justify-between">
             <div class="a-logo__icon" @click="scrollToTop"></div>
-            <ul class="m-nav -position-fixed -col-12 -md-position-static -md-fit-content">
+            <ul class="m-nav -position-fixed -md-position-static">
                 <li class="a-nav__item" data-item="layout" @click="scrollTo(layout)">
                     <i class="a-icon -layers"></i>
                     <span>Layout</span>
