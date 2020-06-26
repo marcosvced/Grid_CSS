@@ -15,6 +15,13 @@
     box-sizing: border-box;
   }
 }
+[class*='-col-'] {
+  width: calc(var(--col-size-without-gap));
+}
+
+[class*='-col-offset-'] {
+  margin-left: var(--offset-with-gap);
+}
 
 @each $name, $value in $breakpoints {
   @include size($name) {
@@ -22,12 +29,4 @@
     @include display(if($name != '', '-#{$name}', ''));
     @include flex(if($name != '', '-#{$name}', ''));
   }
-}
-
-[class*='-col-'] {
-  width: calc(var(--col-size-without-gap));
-}
-
-[class*='-col-offset-'] {
-  margin-left: var(--offset-with-gap);
 }

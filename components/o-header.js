@@ -1,12 +1,19 @@
 const OHeader = Vue.component('o-header', {
     template: `
-     <header class="o-header">
+     <header class="o-header -md-position-sticky">
         <div class="m-header__wrapper -container -display-row -justify-between">
             <div class="a-logo__icon" @click="scrollToTop"></div>
-            <ul class="m-nav">
-                <li class="a-nav__item" data-item="layout" @click="scrollTo($event)">Layout</li>
-                <li class="a-nav__item" data-item="responsive" @click="scrollTo($event)">Responsive</li>
-                <li class="a-nav__item" data-item="modifiers" @click="scrollTo($event)">Modifiers</li>
+            <ul class="m-nav -position-fixed -col-12 -md-position-static -md-fit-content">
+                <li class="a-nav__item" data-item="layout" @click="scrollTo(layout)">
+                    <i class="a-icon -layers"></i>
+                    <span>Layout</span>
+                </li>
+                <li class="a-nav__item" data-item="responsive" @click="scrollTo(responsive)">
+                     <i class="a-icon -grid"></i><span>Responsive</span>
+                </li>
+                <li class="a-nav__item" data-item="modifiers" @click="scrollTo(modifiers)">
+                     <i class="a-icon -tool"></i><span>Modifiers</span>
+                </li>
             </ul>
         </div>
     </header>
@@ -22,7 +29,6 @@ const OHeader = Vue.component('o-header', {
                     item.classList.remove('-item-active');
                 }
             });
-
             this.isDarkBackground();
         })
     },
@@ -40,14 +46,14 @@ const OHeader = Vue.component('o-header', {
                 header.classList.remove('-background-dark');
             }
         },
-        scrollTo: function ($event, duration) {
-            document.querySelector(`#${$event.target.getAttribute('data-item')}`).scrollIntoView({
+        scrollTo: function (target) {
+            target.scrollIntoView({
                 behavior: 'smooth',
                 block: 'center'
             })
 
         },
-        scrollToTop: function ($) {
+        scrollToTop: function () {
             document.scrollingElement.scroll({top:0, behavior: 'smooth',})
         }
     }

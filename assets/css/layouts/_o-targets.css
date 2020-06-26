@@ -5,13 +5,11 @@
 .o-targets .m-target__wrapper {
     background-color: var(--c-medium-light);
     border-radius: var(--border-radius);
-    /*padding: 10rem 3rem 3rem;*/
 }
 
 .o-targets [class*='a-icon'] {
-    height: 45px;
-    width: 45px;
-    min-width: 45px;
+    --icon-size: 45px;
+    min-width: var(--icon-size);
 }
 
 .a-target__title {
