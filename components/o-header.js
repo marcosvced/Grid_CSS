@@ -42,8 +42,10 @@ const OHeader = Vue.component('o-header', {
             const header = document.querySelector('.o-header');
             if (item.getBoundingClientRect().bottom <= header.offsetHeight) {
                 header.classList.add('-background-dark');
+                document.querySelector('meta[name="theme-color"]').content = '#252734';
             } else {
                 header.classList.remove('-background-dark');
+                document.querySelector('meta[name="theme-color"]').content = '#333646';
             }
         },
         scrollTo: function (target) {
