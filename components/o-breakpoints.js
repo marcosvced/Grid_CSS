@@ -40,16 +40,18 @@ const OBreakpoints = Vue.component('o-breakpoints', {
         </div>
         <pre>
             <code class="-markup" contenteditable="false" spellcheck="false">
-             &lt;div class="m-grid-wrapper -display-row-gap">
-                 &lt;div class="a-box -radius -col-7 -xsm-col-6 -sm-col-5 -md-col-4 -ip-col-3 -lg-col-2 -xl-col-1">
-                     &lt;p class="-display-none -xl-display-block"> -xl-col-1 &lt;/p>
-                     &lt;p class="-display-none -lg-display-block -xl-display-none"> -lg-col-2 &lt;/p>
-                 &lt;/div>
-                 &lt;div class="a-box -radius -col-5 -xsm-col-6 -sm-col-7 -md-col-8 -ip-col-9 -lg-col-10 -xl-col-11">
-                     &lt;p class="-display-none -xl-display-block"> -xl-col-11 &lt;/p>
-                     &lt;p class="-display-none -lg-display-block -xl-display-none"> -lg-col-10 &lt;/p>
-                 &lt;/div>
-             &lt;/div>
+&lt;div class="m-grid-wrapper -display-row-gap">
+    &lt;div class="a-box -radius -col-7 -xsm-col-6 -sm-col-5 -md-col-4 -ip-col-3 -lg-col-2 -xl-col-1">
+        &lt;p class="-display-none -xl-display-block"> -xl-col-1 &lt;/p>
+        &lt;p class="-display-none -lg-display-block -xl-display-none"> -lg-col-2 &lt;/p>
+        ...
+    &lt;/div>
+    &lt;div class="a-box -radius -col-5 -xsm-col-6 -sm-col-7 -md-col-8 -ip-col-9 -lg-col-10 -xl-col-11">
+        &lt;p class="-display-none -xl-display-block"> -xl-col-11 &lt;/p>
+        &lt;p class="-display-none -lg-display-block -xl-display-none"> -lg-col-10 &lt;/p>
+        ...
+    &lt;/div>
+&lt;/div>
             </code>            
         </pre>
     </section>

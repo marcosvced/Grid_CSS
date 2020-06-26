@@ -87,7 +87,7 @@
 @mixin flex($prefix) {
   [class*="-display-row"] {
     &.#{$prefix}-align {
-      &-strech {
+      &-stretch {
         align-items: stretch;
       }
 
@@ -177,6 +177,20 @@
     &fixed {
       position: fixed;
     }
+  }
+  .#{$prefix}-pull {
+    &-left {
+      float: left;
+    }
+
+    &-right {
+      float: right;
+    }
+  }
+  .#{$prefix}-clear-pull:after {
+    content: "";
+    display: table;
+    clear: both;
   }
   @for $i from 0 through 20 {
     .#{$prefix}-m {

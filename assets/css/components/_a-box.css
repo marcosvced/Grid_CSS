@@ -13,6 +13,7 @@
     background: var(--c-medium-light);
     transition: background-color .4s ease-in-out;
     font-weight: 600;
+    margin: 0;
 }
 
 .a-box:hover, .a-text:hover {

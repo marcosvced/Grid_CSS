@@ -34,8 +34,9 @@ const OHeader = Vue.component('o-header', {
     },
     methods: {
         isOnScreen: function (item) {
-            const element = document.querySelector(`#${item.getAttribute('data-item')}`)
-            return element.getBoundingClientRect().top <= (self.innerHeight / 2) && element.getBoundingClientRect().bottom >= (self.innerHeight / 2);
+            const element = document.querySelector(`#${item.getAttribute('data-item')}`);
+            return element.getBoundingClientRect().top <= (self.innerHeight / 2) && element.getBoundingClientRect().bottom
+                + +self.getComputedStyle(element).marginBottom.replace('px','') >= (self.innerHeight / 2);
         },
         isDarkBackground: function () {
             const item = document.querySelector('.o-hero');

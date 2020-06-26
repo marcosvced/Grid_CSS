@@ -68,14 +68,14 @@ const ONoGutter = Vue.component('o-no-gutter', {
         </div>
         <pre>
             <code class="-markup" contenteditable="false" spellcheck="false">
-            &lt;div class="-display-row">
-                &lt;div class="-col-1">
-                    &lt;p>-col-1&lt;/p>
-                &lt;/div> 
-                &lt;div class="-col-11">
-                    &lt;p>-col-11&lt;/p>
-                &lt;/div>
-            &lt;/div>
+&lt;div class="-display-row">
+    &lt;div class="-col-1">
+        &lt;p>-col-1&lt;/p>
+    &lt;/div> 
+    &lt;div class="-col-11">
+        &lt;p>-col-11&lt;/p>
+    &lt;/div>
+&lt;/div>
             </code>            
         </pre>
     </section>

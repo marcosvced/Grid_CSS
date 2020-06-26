@@ -72,14 +72,14 @@ const OGutter = Vue.component('o-gutter', {
         </div>
         <pre>
             <code class="-markup" contenteditable="false" spellcheck="false">
-            &lt;div class="-display-row-gap">
-                &lt;div class="-col-1">
-                    &lt;p>-col-1&lt;/p>
-                &lt;/div> 
-                &lt;div class="-col-11">
-                    &lt;p>-col-11&lt;/p>
-                &lt;/div>
-            &lt;/div>
+&lt;div class="-display-row-gap">
+    &lt;div class="-col-1">
+        &lt;p>-col-1&lt;/p>
+    &lt;/div> 
+    &lt;div class="-col-11">
+        &lt;p>-col-11&lt;/p>
+    &lt;/div>
+&lt;/div>
             </code>            
         </pre>
     </section>

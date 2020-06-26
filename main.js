@@ -7,6 +7,7 @@ new Vue({
         OGutter,
         ONoGutter,
         OBreakpoints,
-        OWrap
+        OWrap,
+        OFlexModifiers,
     }
 })
