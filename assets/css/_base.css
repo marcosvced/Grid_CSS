@@ -15,9 +15,9 @@
 body {
     overflow-x: hidden;
     background-color: var(--c-dark);
-    font-family: Lato, sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     color: var(--c-light);
-    line-height: 1.4;
+    line-height: 1.5;
     scroll-behavior: smooth;
 }
 

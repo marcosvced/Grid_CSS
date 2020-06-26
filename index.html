@@ -10,23 +10,33 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"/>
     <link rel="stylesheet" href="assets/css/vendor/main.css">
     <link rel="stylesheet" href="assets/css/index.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
 <div id="app">
     <o-header></o-header>
     <o-hero></o-hero>
     <o-targets></o-targets>
-    <div id="layout">
+    <div id="layout" class="-mb-7 -md-mb-15">
+        <header class="m-header -container">
+            <p class="a-header__abstract">The layout</p>
+        </header>
         <o-gutter></o-gutter>
         <o-no-gutter></o-no-gutter>
     </div>
-    <div id="responsive">
+    <div id="responsive" class="-mb-7 -md-mb-15">
+        <header class="m-header -container">
+            <p class="a-header__abstract">The responsive</p>
+        </header>
         <o-breakpoints></o-breakpoints>
-    </div>
-    <div id="modifiers">
         <o-wrap></o-wrap>
+    </div>
+    <div id="modifiers" class="-mb-7 -md-mb-15">
+        <header class="m-header -container">
+            <p class="a-header__abstract">The modifiers</p>
+        </header>
         <o-text></o-text>
     </div>
 </div>

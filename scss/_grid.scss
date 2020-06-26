@@ -2,7 +2,7 @@
 
 .o-container,
 [class*='-container'] {
-  max-width: map-get($breakpoints, 'lg');
+  max-width: map-get($breakpoints, $max-width-container);
   padding-left: 3%;
   padding-right: 3%;
   margin: {

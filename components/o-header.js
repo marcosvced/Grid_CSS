@@ -4,14 +4,14 @@ const OHeader = Vue.component('o-header', {
         <div class="m-header__wrapper -container -display-row -justify-between">
             <div class="a-logo__icon" @click="scrollToTop"></div>
             <ul class="m-nav -position-fixed -md-position-static">
-                <li class="a-nav__item" data-item="layout" @click="scrollTo(layout)">
+                <li class="a-nav__item" data-item="layout" @click="scrollToId(layout)">
                     <i class="a-icon -layers"></i>
                     <span>Layout</span>
                 </li>
-                <li class="a-nav__item" data-item="responsive" @click="scrollTo(responsive)">
+                <li class="a-nav__item" data-item="responsive" @click="scrollToId(responsive)">
                      <i class="a-icon -grid"></i><span>Responsive</span>
                 </li>
-                <li class="a-nav__item" data-item="modifiers" @click="scrollTo(modifiers)">
+                <li class="a-nav__item" data-item="modifiers" @click="scrollToId(modifiers)">
                      <i class="a-icon -tool"></i><span>Modifiers</span>
                 </li>
             </ul>
@@ -48,15 +48,12 @@ const OHeader = Vue.component('o-header', {
                 document.querySelector('meta[name="theme-color"]').content = '#333646';
             }
         },
-        scrollTo: function (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'center'
-            })
-
+        scrollToId: function (target) {
+            console.log(target.offsetTop - (self.innerHeight / 2))
+            document.scrollingElement.scroll({top: target.offsetTop - self.innerHeight / 2, behavior: 'smooth'})
         },
         scrollToTop: function () {
-            document.scrollingElement.scroll({top:0, behavior: 'smooth',})
+            document.scrollingElement.scroll({top: 0, behavior: 'smooth',})
         }
     }
 })

@@ -1,0 +1,29 @@
+pre {
+    background-color: var(--c-medium-dark);
+    margin: 0;
+    padding: .75rem;
+    border-radius: var(--border-radius);
+    white-space: normal;
+    font-size: 1rem;
+}
+
+code {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+}
+
+.a-code.-code-inline {
+    background-color: var(--c-medium-dark);
+    border-radius: var(--border-radius);
+    display: inline-block;
+    padding: .5rem .75rem;
+}
+code.-markup{
+    white-space: pre;
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+code.-markup::-webkit-scrollbar {
+    height: 5px;
+}

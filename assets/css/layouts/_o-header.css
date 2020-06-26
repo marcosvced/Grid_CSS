@@ -74,7 +74,7 @@
 
 @media (min-width: 640px) {
     .o-header .m-header__wrapper .m-nav .a-nav__item {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -114,6 +114,8 @@
     opacity: 1;
 }
 
-.o-header .m-header__wrapper .m-nav .a-nav__item:not(:last-child) {
-    margin-right: 1.5rem;
+@media (min-width: 640px) {
+    .o-header .m-header__wrapper .m-nav .a-nav__item:not(:last-child) {
+        margin-right: 1.5rem;
+    }
 }

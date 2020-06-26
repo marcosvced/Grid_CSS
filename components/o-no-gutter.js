@@ -1,10 +1,9 @@
 const ONoGutter = Vue.component('o-no-gutter', {
     template: `
-     
-    <section class="o-no-gutter -container -mb-10">
+    <section class="o-no-gutter -container -mb-4 -md-mb-7">
         <header class="m-header -col-12 -mb-2">
-            <h2 class="a-header__tile">Grid columns without gutter</h2>
-             <p class="a-header__description -col-12 -lg-col-7">
+            <h2 class="a-header__tile -mb-4">Grid columns without gutter</h2>
+             <p class="a-header__description -col-12 -lg-col-9">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam architecto at, autem est eum excepturi, fugit id incidunt laborum magnam molestias nesciunt porro quisquam repudiandae saepe tenetur ullam, voluptatum?
              </p>
         </header>
@@ -61,6 +60,24 @@ const ONoGutter = Vue.component('o-no-gutter', {
                 <p>-col-6</p>
             </div>
         </div>
+        <div class="m-text__wrapper -pt-5">
+            <p class="a-gutter__text">
+                To use the <code class="a-code -code-inline">-col-</code> modifier it is not necessary to have a parent modifier of <code class="a-code -code-inline">-display-row</code> type. <br/>
+                But you can use the modifier <code class="a-code -code-inline">-display-row</code> to display the columns as Flex-box row.
+            </p>
+        </div>
+        <pre>
+            <code class="-markup" contenteditable="false" spellcheck="false">
+            &lt;div class="-display-row">
+                &lt;div class="-col-1">
+                    &lt;p>-col-1&lt;/p>
+                &lt;/div> 
+                &lt;div class="-col-11">
+                    &lt;p>-col-11&lt;/p>
+                &lt;/div>
+            &lt;/div>
+            </code>            
+        </pre>
     </section>
     `
 })

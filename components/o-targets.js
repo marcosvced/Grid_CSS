@@ -1,7 +1,7 @@
 const OTargets = Vue.component('o-targets', {
     template: `
-        <section class="o-targets -container -display-column -ip-display-row -mb-10">
-        <div class="m-target__wrapper -p-3 -ip-pt-14 -lg-display-row -mb-2 -ip-mb-0 -ip-mr-2 -col-12 -ip-col-4">
+        <section class="o-targets -container -display-column -ip-display-row -mb-7 -md-mb-15">
+        <div class="m-target__wrapper -p-3 -ip-pt-18 -lg-display-row -mb-2 -ip-mb-0 -ip-mr-2 -col-12 -ip-col-4">
             <i class="a-icon -feather -mb-3 -lg-mb-0 -lg-mr-3"></i>
             <div class="m-target__info">
                 <h2 class="a-target__title">
@@ -12,7 +12,7 @@ const OTargets = Vue.component('o-targets', {
                 </p>
             </div>
         </div>
-        <div class="m-target__wrapper -p-3 -ip-pt-13 -lg-display-row -mb-2 -ip-mb-0 -ip-mr-2 -col-12 -ip-col-4">
+        <div class="m-target__wrapper -p-3 -ip-pt-18 -lg-display-row -mb-2 -ip-mb-0 -ip-mr-2 -col-12 -ip-col-4">
             <i class="a-icon -pen-tool -mb-3 -lg-mb-0 -lg-mr-3"></i>
             <div class="m-target__info">
                 <h2 class="a-target__title">
@@ -23,7 +23,7 @@ const OTargets = Vue.component('o-targets', {
                 </p>
             </div>
         </div>
-        <div class="m-target__wrapper -p-3 -ip-pt-13 -lg-display-row -col-12 -ip-col-4">
+        <div class="m-target__wrapper -p-3 -ip-pt-18 -lg-display-row -col-12 -ip-col-4">
             <i class="a-icon -watch -mb-3 -lg-mb-0 -lg-mr-3"></i>
             <div class="m-target__info">
                 <h2 class="a-target__title">

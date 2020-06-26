@@ -1,10 +1,9 @@
 const OBreakpoints = Vue.component('o-breakpoints', {
     template: `
-     <section class="o-breakpoints -container -mb-10">
+     <section class="o-breakpoints -container -mb-5">
         <header class="m-header -col-12 -mb-2">
-            <p class="a-header__abstract">The responsive</p>
-            <h2 class="a-header__tile">Grid breakpoints</h2>
-            <p class="a-header__description -col-12 -lg-col-7">
+            <h2 class="a-header__tile -mb-4">Grid breakpoints</h2>
+            <p class="a-header__description -col-12 -lg-col-9">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam architecto at, autem est eum excepturi, fugit id incidunt laborum magnam molestias nesciunt porro quisquam repudiandae saepe tenetur ullam, voluptatum?
            </p>
         </header>
@@ -33,6 +32,26 @@ const OBreakpoints = Vue.component('o-breakpoints', {
                     <p>-col-12</p>
             </div>
         </div>
+         <div class="m-text__wrapper -pt-5">
+            <p class="a-gutter__text">
+                To use the <code class="a-code -code-inline">-col-</code> modifier it is not necessary to have a parent modifier of <code class="a-code -code-inline">-display-row</code> type. <br/>
+                But you must use the modifier <code class="a-code -code-inline">-display-row-gap</code> to add a gutter between the columns.
+            </p>
+        </div>
+        <pre>
+            <code class="-markup" contenteditable="false" spellcheck="false">
+             &lt;div class="m-grid-wrapper -display-row-gap">
+                 &lt;div class="a-box -radius -col-7 -xsm-col-6 -sm-col-5 -md-col-4 -ip-col-3 -lg-col-2 -xl-col-1">
+                     &lt;p class="-display-none -xl-display-block"> -xl-col-1 &lt;/p>
+                     &lt;p class="-display-none -lg-display-block -xl-display-none"> -lg-col-2 &lt;/p>
+                 &lt;/div>
+                 &lt;div class="a-box -radius -col-5 -xsm-col-6 -sm-col-7 -md-col-8 -ip-col-9 -lg-col-10 -xl-col-11">
+                     &lt;p class="-display-none -xl-display-block"> -xl-col-11 &lt;/p>
+                     &lt;p class="-display-none -lg-display-block -xl-display-none"> -lg-col-10 &lt;/p>
+                 &lt;/div>
+             &lt;/div>
+            </code>            
+        </pre>
     </section>
     `
 })
