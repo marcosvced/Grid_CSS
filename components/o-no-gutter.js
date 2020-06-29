@@ -2,7 +2,7 @@ const ONoGutter = Vue.component('o-no-gutter', {
     template: `
     <section class="o-no-gutter -container -mb-4 -md-mb-7">
         <header class="m-header -col-12 -mb-2">
-            <h2 class="a-header__tile -mb-4">Grid columns without gutter</h2>
+            <h2 class="a-header__tile -mb-4">Grid layout</h2>
              <p class="a-header__description -col-12 -lg-col-9">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam architecto at, autem est eum excepturi, fugit id incidunt laborum magnam molestias nesciunt porro quisquam repudiandae saepe tenetur ullam, voluptatum?
              </p>
