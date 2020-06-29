@@ -1,5 +1,5 @@
 :root {
-    --c-primary: #ffaf29;
+    --c-primary: #ffc25c;
     --c-light: #ebebec;
     --c-medium-light: #424657;
     --c-dark: #252734;
@@ -7,7 +7,7 @@
     --border-radius: 5px;
     --icon-url: '';
     --icon-size: 15px;
-    --h1-size: 7rem;
+    --h1-size: 5rem;
     --h2-size: 2.25rem;
     --logo-size: 50px;
 }

@@ -1,24 +1,36 @@
 .a-button.-btn-link {
     text-decoration: none;
-    background-color: var(--c-primary);
     color: var(--c-light);
     font-size: 1.25rem;
     display: flex;
     align-items: center;
     position: relative;
     width: fit-content;
-    padding: .75rem 1.5rem .75rem 1.5rem;
+    padding: .5rem 0 .5rem 0;
     border-radius: var(--border-radius);
+    z-index: 0;
+}
+
+.a-button.-btn-link:before {
+    content: "";
+    width: 75%;
+    height: 100%;
+    background-color: var(--c-primary);
+    position: absolute;
+    left: 30%;
+    z-index: -1;
+    bottom: 0;
+    border-radius: var(--border-radius);
+    transition: height .6s ease;
 }
 
 .a-button.-btn-link .a-icon {
     width: 20px;
     height: 20px;
     margin-left: 1.5rem;
-    transition: margin-left .3s ease-in-out;
 }
 
-.a-button.-btn-link:hover .a-icon {
-    margin-left: 3rem;
+.a-button.-btn-link:hover:before {
+    height: 5%;
 }
 
