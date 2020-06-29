@@ -50,8 +50,8 @@ const OHeader = Vue.component('o-header', {
             }
         },
         scrollToId: function (target) {
-            console.log(target.offsetTop - (self.innerHeight / 2))
-            document.scrollingElement.scroll({top: target.offsetTop - self.innerHeight / 2, behavior: 'smooth'})
+            const header = document.querySelector('.o-header');
+            document.scrollingElement.scroll({top: target.offsetTop - (self.innerHeight - header.offsetHeight) / 2, behavior: 'smooth'})
         },
         scrollToTop: function () {
             document.scrollingElement.scroll({top: 0, behavior: 'smooth',})
