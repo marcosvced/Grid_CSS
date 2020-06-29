@@ -2,9 +2,11 @@ const ONoGutter = Vue.component('o-no-gutter', {
     template: `
     <section class="o-no-gutter -container -mb-4 -md-mb-7">
         <header class="m-header -col-12 -mb-2">
-            <h2 class="a-header__tile -mb-4">Grid layout</h2>
+            <h2 class="a-header__tile">Grid layout</h2>
              <p class="a-header__description -col-12 -lg-col-9">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam architecto at, autem est eum excepturi, fugit id incidunt laborum magnam molestias nesciunt porro quisquam repudiandae saepe tenetur ullam, voluptatum?
+                The default grid is a twelve column fluid grid.<br>
+                You can use a <code class="a-code -code-inline">o-container</code> or <code class="a-code -code-inline">-contianer</code> css class which add a with of 1366px that shrinks with the browser or device at smaller sizes.
+                The max width can be change with the variable CSS <code class="a-code -code-inline">--container-size</code> and all columns will resize accordingly.
              </p>
         </header>
         <div class="m-grid-wrapper -display-row">

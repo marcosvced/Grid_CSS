@@ -13,15 +13,15 @@
 
 .a-button.-btn-link:before {
     content: "";
-    width: 75%;
-    height: 100%;
+    width: calc(100% + 26px);
+    height: 45px;
     background-color: var(--c-primary);
     position: absolute;
-    left: 30%;
+    left: -13px;
     z-index: -1;
     bottom: 0;
     border-radius: var(--border-radius);
-    transition: height .6s ease;
+    transition: all .6s ease;
 }
 
 .a-button.-btn-link .a-icon {
@@ -31,6 +31,8 @@
 }
 
 .a-button.-btn-link:hover:before {
-    height: 5%;
+    width: 45px;
+    border-radius: 45px;
+    left: calc(100% - 33px);
 }
 

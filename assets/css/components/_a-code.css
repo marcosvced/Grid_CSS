@@ -20,7 +20,7 @@ h2 > code {
     background-color: var(--c-medium-dark);
     border-radius: var(--border-radius);
     display: inline-block;
-    padding: .5rem .75rem;
+    padding: .25rem .75rem;
 }
 code.-markup{
     white-space: pre;

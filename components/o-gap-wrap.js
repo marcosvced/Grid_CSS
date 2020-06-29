@@ -4,7 +4,12 @@ const OGapWrap = Vue.component('o-gap-wrap', {
         <header class="m-header -col-12 -mb-2">
             <h2 class="a-header__tile"><code>-gap</code> and <code>-wrap</code> modifiers</h2>
             <p class="a-header__description -col-12 -lg-col-9">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam architecto at, autem est eum excepturi, fugit id incidunt laborum magnam molestias nesciunt porro quisquam repudiandae saepe tenetur ullam, voluptatum?
+               The most sensible combination of modifiers is the use of <code class="a-code -code-inline"> -gap </code> and <code class="a-code -code-inline"> -wrap </code> in the same row. Because if the row breaks, the column shown as the last one doesn't remove the gap.
+               In this case should by remove and restore the gap with the modifiers <code class="a-code -code-inline">-remove-gap</code> and <code class="a-code -code-inline">-restore-gap</code>.
+              
+            </p>
+            <p  class="a-header__description -col-12 -lg-col-9">
+                This is so because Aguia doesn't use negative padding or margins to define columns and rows.
             </p>
         </header>
         <div class="m-grid-wrapper -display-row -gap -wrap">

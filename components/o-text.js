@@ -2,9 +2,9 @@ const OText = Vue.component('o-text', {
     template: `
     <section class="o-texts -container -mb-4 -md-mb-7">
         <header class="m-header -col-12 -mb-2">
-            <h2 class="a-header__tile -mb-4">Text modifiers</h2>
+            <h2 class="a-header__tile">Text alignment</h2>
             <p class="a-header__description -col-12 -lg-col-9">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam architecto at, autem est eum excepturi, fugit id incidunt laborum magnam molestias nesciunt porro quisquam repudiandae saepe tenetur ullam, voluptatum?
+               Easily realign text to components with text alignment classes.
             </p>
         </header>
         <div class="m-text-wrapper -display-row -gap">

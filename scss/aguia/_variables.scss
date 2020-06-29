@@ -1,0 +1,8 @@
+$grid_gutter: 0.75rem;
+$number-of-columns: 12;
+$max-width-container: lg;
+
+/* Pure css var */
+:root {
+  --container-size: #{map-get($breakpoints, $max-width-container)};
+}

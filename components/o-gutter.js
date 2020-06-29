@@ -2,13 +2,9 @@ const OGutter = Vue.component('o-gutter', {
     template: `
     <section class="o-gutter -container -mb-4 -md-mb-7">
         <header class="m-header -col-12 -mb-4">
-            <h2 class="a-header__tile -mb-4">Grid with gap modifier</h2>
-            <p class="a-header__description -col-12 -lg-col-9">
-                The base grid is a twelve column fluid grid with a max width of 1366px, that shrinks with the browser/device at smaller sizes. <br/>
-                The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier.
-            </p>
-            <p class="a-header__description -col-12 -lg-col-9">
-                Go ahead, resize the browser.
+            <h2 class="a-header__tile">Grid with gap</h2>
+            <p class="a-header__description -col-12 -lg-col-7">
+                By default the grid doesn't have a gutter but to space the columns Aguia has the modifier <code class="a-code -code-inline">-gap</code> which add a gap o .75rem between columns.
             </p>
         </header>
         <div class="m-grid-wrapper -display-row -gap">
@@ -66,8 +62,7 @@ const OGutter = Vue.component('o-gutter', {
         </div>
         <div class="m-text__wrapper -pt-5">
             <p class="a-gutter__text">
-                To use the <code class="a-code -code-inline">-col-</code> modifier it is not necessary to have a parent modifier of <code class="a-code -code-inline">-display-row</code> type. <br/>
-                But you must use the modifier <code class="a-code -code-inline">-display-row -gap</code> to add a gutter between the columns.
+                It must bew use at the same level of <code class="a-code -code-inline">-display-row</code> or <code class="a-code -code-inline">-display-row-reverse</code>
             </p>
         </div>
         <pre class="-mb-4">

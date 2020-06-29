@@ -2,9 +2,9 @@ const OFlexModifiers = Vue.component('o-flex-modifiers', {
     template: `
     <section class="o-flex-modifiers -container -mb-4 -md-mb-7">
         <header class="m-header -col-12 -mb-2">
-            <h2 class="a-header__tile -mb-4">Flex box modifiers</h2>
+            <h2 class="a-header__tile">Flex box behaviors</h2>
             <p class="a-header__description -col-12 -lg-col-9">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam architecto at, autem est eum excepturi, fugit id incidunt laborum magnam molestias nesciunt porro quisquam repudiandae saepe tenetur ullam, voluptatum?
+                Quickly manage the layout direction and alignment with a full suite of responsive flexbox utilities.
             </p>
         </header>
         <div class="-display-row -gap -wrap">
@@ -95,6 +95,10 @@ const OFlexModifiers = Vue.component('o-flex-modifiers', {
                 <li class="a-list__item -md-display-none">-justify-around</li>
                 <li class="a-list__item -md-display-none">-justify-between</li>
                 <li class="a-list__item">-wrap</li>
+                <li class="a-list__item">-display-row</li>
+                <li class="a-list__item">-display-row-reverse</li>
+                <li class="a-list__item">-display-column</li>
+                <li class="a-list__item">-display-column-reverse</li>
             </ul>
         </div>
     </section>

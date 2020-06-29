@@ -1,0 +1,21 @@
+@function column-with-gap($gutter, $number-of-columns, $column-number) {
+  $X: 100%/$number-of-columns;
+  $Y: ($gutter * ($number-of-columns - 1) / $number-of-columns);
+  @return calc(calc(calc(#{$X} - #{$Y}) * #{$column-number}) + #{$gutter * ($column-number - 1)});
+}
+
+@function column-without-gap($number-of-columns, $column-number) {
+  $X: 100%/$number-of-columns;
+  @return $X * $column-number;
+}
+
+@function offset-with-gap($gutter,$number-of-columns, $column-number) {
+  $X: 100%/$number-of-columns;
+  $Y: ($gutter * ($number-of-columns - 1) / $number-of-columns);
+  @return calc(calc(calc(#{$X} - #{$Y}) * #{$column-number}) + #{$gutter * ($column-number)});
+}
+
+@function offset-without-gap($number-of-columns, $column-number) {
+  $X: 100%/$number-of-columns;
+  @return $X * $column-number;
+}
