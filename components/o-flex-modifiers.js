@@ -7,8 +7,8 @@ const OFlexModifiers = Vue.component('o-flex-modifiers', {
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam architecto at, autem est eum excepturi, fugit id incidunt laborum magnam molestias nesciunt porro quisquam repudiandae saepe tenetur ullam, voluptatum?
             </p>
         </header>
-        <div class="-display-row-gap">
-            <div class="m-flex-modifiers-wrapper -display-row -flex-box -align-start -mb-1 -col-4">
+        <div class="-display-row -gap -wrap">
+            <div class="m-flex-modifiers-wrapper -display-row -flex-box -align-start -mb-1 -col-12 -remove-gap -ip-col-4 -ip-restore-gap">
                 <p class="a-text">
                     -align-start
                 </p>
@@ -16,7 +16,7 @@ const OFlexModifiers = Vue.component('o-flex-modifiers', {
                     -align-start
                 </p>
             </div>
-            <div class="m-flex-modifiers-wrapper -display-row -flex-box -align-center -mb-1 -col-4">
+            <div class="m-flex-modifiers-wrapper -display-row -flex-box -align-center -mb-1 -col-12 -remove-gap -ip-col-4 -ip-restore-gap">
                 <p class="a-text">
                     -align-center
                 </p>
@@ -24,7 +24,7 @@ const OFlexModifiers = Vue.component('o-flex-modifiers', {
                     -align-center
                 </p>
             </div>
-            <div class="m-flex-modifiers-wrapper -display-row -flex-box -align-end -mb-1 -col-4">
+            <div class="m-flex-modifiers-wrapper -display-row -flex-box -align-end -mb-1 -col-12 -ip-col-4">
                 <p class="a-text">
                     -align-end
                 </p>
@@ -36,8 +36,8 @@ const OFlexModifiers = Vue.component('o-flex-modifiers', {
         <div class="m-text__wrapper">
             <p class="a-flex-modifiers__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi impedit nulla porro.</p>
         </div>
-        <div class="-display-row-gap">
-            <div class="m-flex-modifiers-wrapper -display-row -flex-box -justify-start -align-center -mb-1 -col-4">
+        <div class="-display-row -gap -wrap">
+            <div class="m-flex-modifiers-wrapper -display-row -flex-box -justify-start -align-center -mb-1 -col-12 -remove-gap -ip-col-4 -ip-restore-gap">
                 <p class="a-text">
                     -justify-start
                 </p>
@@ -45,7 +45,7 @@ const OFlexModifiers = Vue.component('o-flex-modifiers', {
                     -justify-start
                 </p>
             </div>
-            <div class="m-flex-modifiers-wrapper -display-row -flex-box -justify-center -align-center -mb-1 -col-4">
+            <div class="m-flex-modifiers-wrapper -display-row -flex-box -justify-center -align-center -mb-1 -col-12 -remove-gap -ip-col-4 -ip-restore-gap">
                 <p class="a-text">
                     -justify-center
                 </p>
@@ -53,7 +53,7 @@ const OFlexModifiers = Vue.component('o-flex-modifiers', {
                     -justify-center
                 </p>
             </div>
-            <div class="m-flex-modifiers-wrapper -display-row -flex-box -justify-end -align-center -mb-1 -col-4">
+            <div class="m-flex-modifiers-wrapper -display-row -flex-box -justify-end -align-center -mb-1 -col-12 -ip-col-4">
                 <p class="a-text">
                     -justify-end
                 </p>
@@ -62,8 +62,8 @@ const OFlexModifiers = Vue.component('o-flex-modifiers', {
                 </p>
             </div>
         </div>
-        <div class="-display-row-gap">
-            <div class="m-flex-modifiers-wrapper -display-row -flex-box -justify-around -align-center -mb-1 -col-6">
+        <div class="-display-none -md-display-row -md-gap -md-wrap">
+            <div class="m-flex-modifiers-wrapper -display-row -flex-box -justify-around -align-center -mb-1 -col-12 -remove-gap -ip-col-6 -ip-restore-gap">
                 <p class="a-text">
                     -justify-around
                 </p>
@@ -74,7 +74,7 @@ const OFlexModifiers = Vue.component('o-flex-modifiers', {
                     -justify-around
                 </p>
             </div>
-            <div class="m-flex-modifiers-wrapper -display-row -flex-box -justify-between -align-center -mb-1 -col-6">
+            <div class="m-flex-modifiers-wrapper -display-row -flex-box -justify-between -align-center -mb-1 -col-12  -ip-col-6">
                 <p class="a-text">
                     -justify-between
                 </p>
@@ -92,7 +92,8 @@ const OFlexModifiers = Vue.component('o-flex-modifiers', {
                 <li class="a-list__item">-align-stretch</li>
                 <li class="a-list__item">-justify-stretch</li>
                 <li class="a-list__item">-justify-evenly</li>
-                <li class="a-list__item">-justify-evenly</li>
+                <li class="a-list__item -md-display-none">-justify-around</li>
+                <li class="a-list__item -md-display-none">-justify-between</li>
                 <li class="a-list__item">-wrap</li>
             </ul>
         </div>

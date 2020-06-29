@@ -23,44 +23,6 @@
       &-reverse {
         display: flex;
         flex-direction: row-reverse;
-
-        &-gap {
-          display: flex;
-          flex-direction: row;
-
-          & > [class*='-col-'] {
-            width: var(--col-size-with-gap);
-
-            &:not(:last-child) {
-              margin: {
-                right: $grid_gutter;
-              };
-            }
-          }
-
-          & > [class*='-offset-'] {
-            margin-left: var(--offset-with-gap);
-          }
-        }
-      }
-
-      &-gap {
-        display: flex;
-        flex-direction: row;
-
-        & > [class*='-col-'] {
-          width: var(--col-size-with-gap);
-
-          &:not(:last-child) {
-            margin: {
-              right: $grid_gutter;
-            };
-          }
-        }
-
-        & > [class*='-offset-'] {
-          margin-left: var(--offset-with-gap);
-        }
       }
     }
 
@@ -85,6 +47,7 @@
 }
 
 @mixin flex($prefix) {
+  [class*="-display-column"],
   [class*="-display-row"] {
     &.#{$prefix}-align {
       &-stretch {
@@ -137,6 +100,36 @@
     &.#{$prefix}-wrap {
       flex-wrap: wrap;
     }
+
+    &.#{$prefix}-gap {
+      & > [class*='-col-'] {
+        width: var(--col-size-with-gap);
+
+        &:not(:last-child) {
+          margin: {
+            right: $grid_gutter;
+          };
+        }
+      }
+
+      & > [class*='-offset-'] {
+        margin-left: var(--offset-with-gap);
+      }
+    }
+
+    &[class*='-gap'] > [class*='-col-'] {
+      &.#{$prefix}-remove-gap {
+        margin: {
+          right: 0;
+        };
+      }
+
+      &.#{$prefix}-restore-gap {
+        margin: {
+          right: $grid_gutter;
+        };
+      }
+    }
   }
 }
 
@@ -179,20 +172,17 @@
     }
   }
   .#{$prefix}-pull {
-    &-left {
-      float: left;
-    }
-
-    &-right {
-      float: right;
-    }
+    float: left;
   }
-  .#{$prefix}-clear-pull:after {
+  .#{$prefix}-push {
+    float: right;
+  }
+  .#{$prefix}-clear:after {
     content: "";
     display: table;
     clear: both;
   }
-  @for $i from 0 through 20 {
+  @for $i from 0 through ($number-of-columns * 2) {
     .#{$prefix}-m {
       &-#{$i} {
         margin: $space * $i;

@@ -9,5 +9,7 @@ new Vue({
         OBreakpoints,
         OWrap,
         OFlexModifiers,
+        OGapWrap,
+        OFooter
     }
 })

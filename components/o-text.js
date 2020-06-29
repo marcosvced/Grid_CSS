@@ -7,7 +7,7 @@ const OText = Vue.component('o-text', {
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam architecto at, autem est eum excepturi, fugit id incidunt laborum magnam molestias nesciunt porro quisquam repudiandae saepe tenetur ullam, voluptatum?
             </p>
         </header>
-        <div class="m-text-wrapper -display-row-gap">
+        <div class="m-text-wrapper -display-row -gap">
             <p class="a-text -radius -col-4">
                 -text-left
             </p>
