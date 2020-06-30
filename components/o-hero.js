@@ -38,8 +38,8 @@ const OHero = Vue.component('o-hero', {
     methods: {
         download: function () {
             this.$http({
-                method: 'post',
-                url: 'https://aguia-design.netlify.app/assets/aguia-zip/aguia.zip',
+                method: 'get',
+                url: 'https://aguia-design.netlify.app/assets/aguia-zip/aguia-zip',
                 responseType: 'blob'
             })
                 .then(response => {
