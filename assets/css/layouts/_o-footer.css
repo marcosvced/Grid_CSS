@@ -1,7 +1,7 @@
 .o-footer {
-    height: 40vh;
     background-color: var(--c-medium-dark);
 }
+
 .o-footer .a-logo__icon-devler {
     background-image: url("../../devler.svg");
     background-position: center;
@@ -9,9 +9,16 @@
     background-size: contain;
     height: calc(var(--logo-size) + 20px);
     width: calc(var(--logo-size) + 20px);
-
     cursor: pointer;
 }
-.o-footer span {
+
+.o-footer .a-footer__title {
+    white-space: nowrap;
+}
+
+.o-footer .a-footer__title span {
     opacity: .65;
+}
+.o-footer .a-footer__subtitle small:not(.-bold)  {
+    opacity: .5;
 }

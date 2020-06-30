@@ -35,3 +35,7 @@
 .a-icon.-tool {
     --icon-url: url('../../icons/tool.svg');
 }
+
+.a-icon.-smile {
+    --icon-url: url('../../icons/smile.png');
+}

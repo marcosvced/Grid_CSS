@@ -1,3 +1,4 @@
+Vue.prototype.$http = axios;
 new Vue({
     el: '#app',
     components: {

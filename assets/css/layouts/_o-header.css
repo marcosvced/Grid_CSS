@@ -76,6 +76,14 @@
     .o-header .m-header__wrapper .m-nav .a-nav__item {
         font-size: 1.2rem;
     }
+
+    .o-header .m-header__wrapper .m-nav .a-nav__item:first-child {
+        padding-left: 0;
+    }
+
+    .o-header .m-header__wrapper .m-nav .a-nav__item:last-child {
+        padding-right: 0;
+    }
 }
 
 .o-header .m-header__wrapper .m-nav .a-nav__item:before {

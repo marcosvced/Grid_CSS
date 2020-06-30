@@ -6,6 +6,9 @@
     justify-content: center;
     transition: background-color .4s ease-in-out;
     margin-bottom: .75rem;
+    font-size: clamp(.8rem, 2vw, 1rem);
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .a-text {
@@ -14,6 +17,9 @@
     transition: background-color .4s ease-in-out;
     font-weight: 600;
     margin: 0;
+    font-size: clamp(.8rem, 2vw, 1rem);
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .a-box:hover, .a-text:hover {

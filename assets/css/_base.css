@@ -1,5 +1,5 @@
 :root {
-    --c-primary: #ffc25c;
+    --c-primary: #ffaf29;
     --c-light: #ebebec;
     --c-medium-light: #424657;
     --c-dark: #252734;
@@ -32,7 +32,10 @@ h2 {
     font-size: var(--h2-size);
     margin: 0;
 }
-
+a {
+    text-decoration: none;
+    color: var(--c-light);
+}
 /* width */
 ::-webkit-scrollbar {
     width: 5px;

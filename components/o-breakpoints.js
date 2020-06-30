@@ -37,19 +37,19 @@ const OBreakpoints = Vue.component('o-breakpoints', {
         </div>
         <div class="m-text__wrapper -pt-5">
             <p class="a-gutter__text">
-                To use the <code class="a-code -code-inline">-col-</code> modifier it is not necessary to have a parent modifier of <code class="a-code -code-inline">-display-row</code> type. <br/>
-                But you must use the modifier <code class="a-code -code-inline">-display-row -gap</code> to add a gutter between the columns.
+                The media queries prefixes could be use as prefix of any Aguia modifiers class.<br/>
+                In this block of code the prefixes are use to change the display and column size.
             </p>
         </div>
         <pre>
             <code class="-markup" contenteditable="false" spellcheck="false">
-&lt;div class="m-grid-wrapper -display-row">
-    &lt;div class="a-box -bordered -col-7 -xsm-col-6 -sm-col-5 -md-col-4 -ip-col-3 -lg-col-2 -xl-col-1">
+&lt;div class="-display-row">
+    &lt;div class="-col-7 -xsm-col-6 -sm-col-5 -md-col-4 -ip-col-3 -lg-col-2 -xl-col-1">
         &lt;p class="-display-none -xl-display-block"> -xl-col-1 &lt;/p>
         &lt;p class="-display-none -lg-display-block -xl-display-none"> -lg-col-2 &lt;/p>
         ...
     &lt;/div>
-    &lt;div class="a-box -bordered -col-5 -xsm-col-6 -sm-col-7 -md-col-8 -ip-col-9 -lg-col-10 -xl-col-11">
+    &lt;div class="-col-5 -xsm-col-6 -sm-col-7 -md-col-8 -ip-col-9 -lg-col-10 -xl-col-11">
         &lt;p class="-display-none -xl-display-block"> -xl-col-11 &lt;/p>
         &lt;p class="-display-none -lg-display-block -xl-display-none"> -lg-col-10 &lt;/p>
         ...

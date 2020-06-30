@@ -12,5 +12,9 @@
     <orderEntry type="library" name="normalize" level="application" />
     <orderEntry type="library" name="modern-normalize" level="application" />
     <orderEntry type="library" name="feather-icons" level="application" />
+    <orderEntry type="library" name="widgets" level="application" />
+    <orderEntry type="library" name="buttons" level="application" />
+    <orderEntry type="library" name="axios" level="application" />
+    <orderEntry type="library" name="jszip" level="application" />
   </component>
 </module>

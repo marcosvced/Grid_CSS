@@ -1,5 +1,6 @@
 .o-hero {
     background-color: var(--c-medium-dark);
+    --icon-size: 25px;
 }
 
 .m-hero__wrapper {
