@@ -9,6 +9,7 @@
     padding: .5rem .75rem .5rem .75rem;
     border-radius: var(--border-radius);
     z-index: 0;
+    cursor: pointer;
 }
 
 .a-button.-btn-link:before {

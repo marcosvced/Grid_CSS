@@ -28,7 +28,7 @@ const OHero = Vue.component('o-hero', {
                             With which you can organize your code using the ABEM methodology that you can customize as never before.  
                         </p>
                     </header>
-                    <a class="a-button -btn-link" href="#" @click="download">Download <i class="a-icon -arrow-right"></i></a>
+                    <a class="a-button -btn-link" @click="download">Download <i class="a-icon -arrow-right"></i></a>
                     <p>or <code class="a-code -code-inline -dark">npm i @devler/aguia</code></p>
                 </div>
             </div>
@@ -39,7 +39,7 @@ const OHero = Vue.component('o-hero', {
         download: function () {
             this.$http({
                 method: 'post',
-                url: './assets/aguia-zip/aguia.zip',
+                url: 'https://aguia-design.netlify.app/assets/aguia-zip/aguia.zip',
                 responseType: 'blob'
             })
                 .then(response => {
