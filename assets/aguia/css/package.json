@@ -1,0 +1,19 @@
+{
+  "name": "@devler/aguia",
+  "version": "1.0.0",
+  "description": "A simple responsive framework",
+  "main": "aguia.min.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/marcosvced/aguia-design.git"
+  },
+  "author": "Marcos Vicente Espasandín",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcosvced/aguia-design/issues"
+  },
+  "homepage": "https://github.com/marcosvced/aguia-design#readme"
+}
