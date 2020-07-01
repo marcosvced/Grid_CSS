@@ -11,7 +11,7 @@ const OHero = Vue.component('o-hero', {
                     <p class="-display-row -m-0 -mb-2 -align-center">Well, I appreciate that <i class="a-icon -smile -ml-1"/></p>
                     <div class="-display-row">
                         <div class="-mr-1">
-                            <a class="twitter-share-button" href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-size="large" data-text="Aguia Design System: a simple responsive framework" data-url="https://aguia-design.netlify.app" data-show-count="true">Tweet</a>
+                            <a class="twitter-share-button" href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-size="large" data-text="Aguia Design System: a simple responsive framework" data-url="https://aguia-design.ga" data-show-count="true">Tweet</a>
                         </div>
                         <div class="-mr-1">
                             <a class="github-button" href="https://github.com/marcosvced/Aguia-Design" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star marcosvced/Aguia-Design on GitHub">Star</a>
