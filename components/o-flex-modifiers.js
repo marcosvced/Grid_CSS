@@ -7,6 +7,9 @@ const OFlexModifiers = Vue.component('o-flex-modifiers', {
                 Quickly manage the layout direction and alignment with a full suite of responsive flexbox utilities.
             </p>
         </header>
+         <div class="m-text__wrapper">
+            <p class="a-flex-modifiers__text">Use align-items utilities on flexbox containers to change the alignment of flex items on the cross axis (the y-axis to start, x-axis if flex-direction: column).<br/>Choose from start, end, center, baseline, or stretch (browser default).</p>
+        </div>
         <div class="-display-row -gap -wrap">
             <div class="m-flex-modifiers-wrapper -display-row -flex-box -align-start -mb-1 -col-12 -remove-gap -ip-col-4 -ip-restore-gap">
                 <p class="a-text">
@@ -34,7 +37,7 @@ const OFlexModifiers = Vue.component('o-flex-modifiers', {
             </div>
         </div>
         <div class="m-text__wrapper">
-            <p class="a-flex-modifiers__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi impedit nulla porro.</p>
+            <p class="a-flex-modifiers__text">Use justify-content utilities on flexbox containers to change the alignment of flex items on the main axis (the x-axis to start, y-axis if flex-direction: column).<br/>Choose from start, end, center, etc.</p>
         </div>
         <div class="-display-row -gap -wrap">
             <div class="m-flex-modifiers-wrapper -display-row -flex-box -justify-start -align-center -mb-1 -col-12 -remove-gap -ip-col-4 -ip-restore-gap">
@@ -99,6 +102,7 @@ const OFlexModifiers = Vue.component('o-flex-modifiers', {
                 <li class="a-list__item">-display-row-reverse</li>
                 <li class="a-list__item">-display-column</li>
                 <li class="a-list__item">-display-column-reverse</li>
+                <li class="a-list__item">-order-n</li>
             </ul>
         </div>
     </section>

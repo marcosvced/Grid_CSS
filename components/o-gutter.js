@@ -62,7 +62,7 @@ const OGutter = Vue.component('o-gutter', {
         </div>
         <div class="m-text__wrapper -pt-5">
             <p class="a-gutter__text">
-                It must bew use at the same level of <code class="a-code -code-inline">-display-row</code> or <code class="a-code -code-inline">-display-row-reverse</code>
+                It must be use at the same level of <code class="a-code -code-inline">-display-row</code> or <code class="a-code -code-inline">-display-row-reverse</code>
             </p>
         </div>
         <pre class="-mb-4">
