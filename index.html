@@ -2,273 +2,133 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ABEM Css Grid</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link href='http://fonts.googleapis.com/css?family=Noto-Sans&subset=latin,latin-ext' rel='stylesheet'
-          type='text/css'>
-    <style>
-        body {
-            --c-primary: #ffaf29;
-            --c-light: #ebebec;
-            --c-medium-light: #424657;
-            --c-dark: #252734;
-            --border-radius: 5px;
-            overflow-x: hidden;
-            background-color: var(--c-dark);
-            font-family: Noto Sans, sans-serif;
-            color: var(--c-light);
-        }
+    <title>Aguia Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#333646">
 
-        h1 {
-            font-size: 5rem;
-            margin: 0;
-        }
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Aguia Design System">
+    <meta name="description" content="A simple responsive framework that offers a starting point with which you don't need to fight with the unnecessary default styles of other frameworks. With which you can organize your code using the ABEM methodology that you can customize as never before.">
 
-        h2 {
-            font-weight: normal;
-        }
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aguia-design.netlify.app/">
+    <meta property="og:title" content="Aguia Design System">
+    <meta property="og:description" content="A simple responsive framework that offers a starting point with which you don't need to fight with the unnecessary default styles of other frameworks. With which you can organize your code using the ABEM methodology that you can customize as never before.">
+    <meta property="og:image" content="https://aguia-design.netlify.app/assets/card.png">
 
-        .o-hero {
-            padding-top: 25vh;
-            margin-bottom: 25vh;
-        }
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://aguia-design.netlify.app/">
+    <meta property="twitter:title" content="Aguia Design System">
+    <meta property="twitter:description" content="A simple responsive framework that offers a starting point with which you don't need to fight with the unnecessary default styles of other frameworks. With which you can organize your code using the ABEM methodology that you can customize as never before.">
+    <meta property="twitter:image" content="https://aguia-design.netlify.app/assets/card.png">
 
-        .o-hero .a-hero__title {
-            position: relative;
-            padding-bottom: 5vh;
-        }
-
-        .o-hero .a-hero__title:before {
-            content: "";
-            height: 10px;
-            width: 70px;
-            background: var(--c-primary);
-            position: absolute;
-            bottom: 0;
-        }
-
-        .a-box {
-            background: var(--c-medium-light);
-            min-height: 100px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background-color .4s ease-in-out;
-        }
-
-        .a-text {
-            padding: .75rem;
-            background: var(--c-medium-light);
-            transition: background-color .4s ease-in-out;
-        }
-
-        .a-box:hover, .a-text:hover {
-            background-color: var(--c-primary);
-        }
-
-        .a-box > p {
-            font-weight: 600;
-        }
-
-        .a-text.-radius,
-        .a-box.-radius {
-            border-radius: var(--border-radius);
-        }
-
-        .a-box.-bordered {
-            border: 1px solid var(--c-dark);
-        }
-
-        .a-box.-bordered:first-child {
-            border-bottom-left-radius: var(--border-radius);
-            border-top-left-radius: var(--border-radius);
-        }
-
-        .a-box.-bordered:last-child {
-            border-bottom-right-radius: var(--border-radius);
-            border-top-right-radius: var(--border-radius);
-        }
-
-        .m-grid-wrapper {
-            padding-bottom: .75rem;
-        }
-    </style>
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"/>
+    <link rel="stylesheet" href="assets/aguia/css/aguia.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<section class="o-container o-hero -mb-5">
-    <h1 class="a-hero__title">
-        Atomic<br/> Desing CSS Grid
-    </h1>
-</section>
-
-<!--Grid columns with gutter-->
-<section class="o-container -mb-5">
-    <header class="o-header -col-12 -mb-2">
-        <h2 class="m-header__tile">Grid columns with gutter</h2>
-    </header>
-    <div class="m-grid-wrapper -display-row-gap">
-        <div class="a-box -radius -col-1"><p>-col-1</p></div>
-        <div class="a-box -radius -col-1"><p>-col-1</p></div>
-        <div class="a-box -radius -col-1"><p>-col-1</p></div>
-        <div class="a-box -radius -col-1"><p>-col-1</p></div>
-        <div class="a-box -radius -col-1"><p>-col-1</p></div>
-        <div class="a-box -radius -col-1"><p>-col-1</p></div>
-        <div class="a-box -radius -col-1"><p>-col-1</p></div>
-        <div class="a-box -radius -col-1"><p>-col-1</p></div>
-        <div class="a-box -radius -col-1"><p>-col-1</p></div>
-        <div class="a-box -radius -col-1"><p>-col-1</p></div>
-        <div class="a-box -radius -col-1"><p>-col-1</p></div>
-        <div class="a-box -radius -col-1"><p>-col-1</p></div>
+<div id="app">
+    <o-header></o-header>
+    <o-hero></o-hero>
+    <o-targets></o-targets>
+    <div id="layout" class="-mb-7 -md-mb-15">
+        <header class="m-header -container -mb-4">
+            <p class="a-header__abstract">THE LAYOUT</p>
+        </header>
+        <o-no-gutter></o-no-gutter>
     </div>
-    <div class="m-grid-wrapper -display-row-gap">
-        <div class="a-box -radius -col-2"><p>-col-2</p></div>
-        <div class="a-box -radius -col-2"><p>-col-2</p></div>
-        <div class="a-box -radius -col-2"><p>-col-2</p></div>
-        <div class="a-box -radius -col-2"><p>-col-2</p></div>
-        <div class="a-box -radius -col-2"><p>-col-2</p></div>
-        <div class="a-box -radius -col-2"><p>-col-2</p></div>
+    <div id="responsive" class="-mb-7 -md-mb-15">
+        <header class="m-header -container -mb-4">
+            <p class="a-header__abstract">THE RESPONSIVE</p>
+        </header>
+        <o-breakpoints></o-breakpoints>
     </div>
-    <div class="m-grid-wrapper -display-row-gap">
-        <div class="a-box -radius -col-3"><p>-col-3</p></div>
-        <div class="a-box -radius -col-3"><p>-col-3</p></div>
-        <div class="a-box -radius -col-3"><p>-col-3</p></div>
-        <div class="a-box -radius -col-3"><p>-col-3</p></div>
-    </div>
-    <div class="m-grid-wrapper -display-row-gap">
-        <div class="a-box -radius -col-4"><p>-col-4</p></div>
-        <div class="a-box -radius -col-4"><p>-col-4</p></div>
-        <div class="a-box -radius -col-4"><p>-col-4</p></div>
-    </div>
-    <div class="m-grid-wrapper -display-row-gap">
-        <div class="a-box -radius -col-6"><p>-col-6</p></div>
-        <div class="a-box -radius -col-6"><p>-col-6</p></div>
-    </div>
-    <div class="m-grid-wrapper -display-row-gap">
-        <div class="a-box -radius -col-12"><p>-col-12</p></div>
-    </div>
-</section>
-<!--END: Grid columns with gutter-->
-
-<!--Grid columns without gutter-->
-<section class="o-container -mb-5">
-    <header class="o-header -col-12 -mb-2">
-        <h2 class="m-header__tile">Grid columns without gutter</h2>
-    </header>
-    <div class="m-grid-wrapper -display-row">
-        <div class="a-box -bordered -col-1"><p>-col-1</p></div>
-        <div class="a-box -bordered -col-1"><p>-col-1</p></div>
-        <div class="a-box -bordered -col-1"><p>-col-1</p></div>
-        <div class="a-box -bordered -col-1"><p>-col-1</p></div>
-        <div class="a-box -bordered -col-1"><p>-col-1</p></div>
-        <div class="a-box -bordered -col-1"><p>-col-1</p></div>
-        <div class="a-box -bordered -col-1"><p>-col-1</p></div>
-        <div class="a-box -bordered -col-1"><p>-col-1</p></div>
-        <div class="a-box -bordered -col-1"><p>-col-1</p></div>
-        <div class="a-box -bordered -col-1"><p>-col-1</p></div>
-        <div class="a-box -bordered -col-1"><p>-col-1</p></div>
-        <div class="a-box -bordered -col-1"><p>-col-1</p></div>
-    </div>
-    <div class="m-grid-wrapper -display-row">
-        <div class="a-box -bordered -col-2"><p>-col-2</p></div>
-        <div class="a-box -bordered -col-2"><p>-col-2</p></div>
-        <div class="a-box -bordered -col-2"><p>-col-2</p></div>
-        <div class="a-box -bordered -col-2"><p>-col-2</p></div>
-        <div class="a-box -bordered -col-2"><p>-col-2</p></div>
-        <div class="a-box -bordered -col-2"><p>-col-2</p></div>
-    </div>
-    <div class="m-grid-wrapper -display-row">
-        <div class="a-box -bordered -col-3"><p>-col-3</p></div>
-        <div class="a-box -bordered -col-3"><p>-col-3</p></div>
-        <div class="a-box -bordered -col-3"><p>-col-3</p></div>
-        <div class="a-box -bordered -col-3"><p>-col-3</p></div>
-    </div>
-    <div class="m-grid-wrapper -display-row">
-        <div class="a-box -bordered -col-4"><p>-col-4</p></div>
-        <div class="a-box -bordered -col-4"><p>-col-4</p></div>
-        <div class="a-box -bordered -col-4"><p>-col-4</p></div>
-    </div>
-    <div class="m-grid-wrapper -display-row">
-        <div class="a-box -bordered -col-6"><p>-col-6</p></div>
-        <div class="a-box -bordered -col-6"><p>-col-6</p></div>
-    </div>
-    <div class="m-grid-wrapper -display-row">
-        <div class="a-box -bordered -col-12"><p>-col-12</p></div>
-    </div>
-</section>
-<!--END: Grid columns without gutter-->
-
-<!--Grid breakpoints-->
-<section class="o-container -mb-5">
-    <header class="o-header -col-12 -mb-2">
-        <h2 class="m-header__tile">Grid breakpoints</h2>
-    </header>
-    <div class="m-grid-wrapper">
-        <div class="a-box -radius -mb-1 -col-12 -xsm-col-10 -sm-col-8 -md-col-6 -ip-col-4 -lg-col-2 -xl-col-1">
-            <p class="-display-none -xl-display-block">-xl-col-1</p>
-            <p class="-display-none -lg-display-block -xl-display-none">-lg-col-2</p>
-            <p class="-display-none -ip-display-block -lg-display-none">-ip-col-4</p>
-            <p class="-display-none -md-display-block -ip-display-none">-md-col-6</p>
-            <p class="-display-none -sm-display-block -md-display-none">-sm-col-8</p>
-            <p class="-display-none -xsm-display-block -sm-display-none">-xsm-col-10</p>
-            <p class="-display-block -xsm-display-none">-col-12</p>
-        </div>
-        <div class="a-box -radius -mb-1 -col-1 -xsm-col-2 -sm-col-4 -md-col-6 -ip-col-8 -lg-col-10 -xl-col-12">
-            <p class="-display-none -xl-display-block">-xl-col-12</p>
-            <p class="-display-none -lg-display-block -xl-display-none">-lg-col-10</p>
-            <p class="-display-none -ip-display-block -lg-display-none">-ip-col-8</p>
-            <p class="-display-none -md-display-block -ip-display-none">-md-col-6</p>
-            <p class="-display-none -sm-display-block -md-display-none">-sm-col-4</p>
-            <p class="-display-none -xsm-display-block -sm-display-none">-xsm-col-2</p>
-            <p class="-display-block -xsm-display-none">-col-1</p>
+    <div id="modifiers" class="-mb-7 -md-mb-15">
+        <header class="m-header -container -mb-4">
+            <p class="a-header__abstract">THE MODIFIERS</p>
+            <p class="a-header__description -col-12 -lg-col-9">Aguia has a lot of simple classes ready to use.
+                This classes work as helpers to make the responsive a lite easier.
+                <br/>Sometimes it's better to use a utility class than create a whole new class just to float an element.
+            </p>
+        </header>
+        <o-wrap></o-wrap>
+        <o-gutter></o-gutter>
+        <o-gap-wrap></o-gap-wrap>
+        <o-text></o-text>
+        <o-flex-modifiers></o-flex-modifiers>
+        <div class="o-other-modifiers -container">
+            <header class="m-header -col-12 -mb-2">
+                <h2 class="a-header__tile">More modifiers</h2>
+                <p class="a-header__description -col-12 -lg-col-9">
+                    In addition to the modifiers displayed, you can also use other basic modifiers that make responsive easier.
+                </p>
+            </header>
+            <div class="m-text__wrapper">
+                <p class="a-flex-modifiers__text">Float modifiers:</p>
+                <ul class="m-flex-modifiers__list -list-code">
+                    <li class="a-list__item"><b>To float left:</b> -pull</li>
+                    <li class="a-list__item"><b>To float right:</b> -push</li>
+                    <li class="a-list__item"><b>To clear float row:</b> -clear</li>
+                </ul>
+            </div>
+            <div class="m-text__wrapper">
+                <p class="a-flex-modifiers__text">Position modifiers:</p>
+                <ul class="m-flex-modifiers__list -list-code">
+                    <li class="a-list__item"><b>To position static:</b> -position-static</li>
+                    <li class="a-list__item"><b>To position relative:</b> -position-relative</li>
+                    <li class="a-list__item"><b>To position fixed:</b> -position-fixed</li>
+                    <li class="a-list__item"><b>To position absolute:</b> -position-absolute</li>
+                    <li class="a-list__item"><b>To position sticky:</b> -position-sticky</li>
+                </ul>
+            </div>
+            <div class="m-text__wrapper">
+                <p class="a-flex-modifiers__text">Padding:</p>
+                <ul class="m-flex-modifiers__list -list-code">
+                    <li class="a-list__item"><b>To padding:</b> -p-n</li>
+                    <li class="a-list__item"><b>To padding top:</b> -pt-n</li>
+                    <li class="a-list__item"><b>To padding bottom:</b> -pb-n</li>
+                    <li class="a-list__item"><b>To padding left:</b> -pl-n</li>
+                    <li class="a-list__item"><b>To padding right:</b> -pr-n</li>
+                </ul>
+                <p class="a-flex-modifiers__text">Margin:</p>
+                <ul class="m-flex-modifiers__list -list-code">
+                    <li class="a-list__item"><b>To margin:</b> -m-n</li>
+                    <li class="a-list__item"><b>To margin top:</b> -mt-n</li>
+                    <li class="a-list__item"><b>To margin bottom:</b> -mb-n</li>
+                    <li class="a-list__item"><b>To margin left:</b> -ml-n</li>
+                    <li class="a-list__item"><b>To margin right:</b> -mr-n</li>
+                </ul>
+                <p class="a-flex-modifiers__text">
+                    Padding and margin modifiers modify their property with a default size of <b>.75rem * n</b>.<br/> Where n is a number from 0 to twice the grid columns.
+                </p>
+            </div>
         </div>
     </div>
-</section>
-<!--EDN: Grid breakpoints-->
-
-<!--Grid breakpoints with wrap modifier-->
-<section class="o-container -mb-5">
-    <header class="o-header -col-12 -mb-2">
-        <h2 class="m-header__tile">Grid breakpoints with wrap modifier</h2>
-    </header>
-    <div class="m-grid-wrapper -display-row -wrap">
-        <div class="a-box -bordered -mb-1 -col-12 -ip-col-6 -lg-col-4">
-            <p class="-display-none -lg-display-block">-lg-col-4</p>
-            <p class="-display-none -ip-display-block -lg-display-none">-ip-col-6</p>
-            <p class="-display-block -ip-display-none">-col-12</p>
-        </div>
-        <div class="a-box -bordered -mb-1 -col-12 -ip-col-6 -lg-col-4">
-            <p class="-display-none -lg-display-block">-lg-col-4</p>
-            <p class="-display-none -ip-display-block -lg-display-none">-ip-col-6</p>
-            <p class="-display-block -ip-display-none">-col-12</p>
-        </div>
-        <div class="a-box -bordered -mb-1 -col-12 -lg-col-4">
-            <p class="-display-none -lg-display-block">-lg-col-4</p>
-            <p class="-display-block -lg-display-none">-col-12</p>
-        </div>
-    </div>
-</section>
-<!--EDN: Grid breakpoints with wrap modifier-->
-
-<!--Text modifiers-->
-<section class="o-container -mb-5">
-    <header class="o-header -col-12 -mb-2">
-        <h2 class="m-header__tile">Text modifiers</h2>
-    </header>
-    <div class="m-text-wrapper -display-row-gap">
-        <p class="a-text -radius   -col-4">
-            -text-left
-        </p>
-        <p class="a-text -text-center -radius  -col-4">
-            -text-center
-        </p>
-        <p class="a-text -text-right -radius -col-4">
-            -text-right
-        </p>
-    </div>
-</section>
-<!--END: Text modifiers-->
+    <o-footer></o-footer>
+</div>
 </body>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.2/axios.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script src="components/o-header.js"></script>
+<script src="components/o-hero.js"></script>
+<script src="components/o-targets.js"></script>
+<script src="components/o-no-gutter.js"></script>
+<script src="components/o-breakpoints.js"></script>
+<script src="components/o-wrap.js"></script>
+<script src="components/o-gutter.js"></script>
+<script src="components/o-gap-wrap.js"></script>
+<script src="components/o-text.js"></script>
+<script src="components/o-flex-modifiers.js"></script>
+<script src="components/o-footer.js"></script>
+<script src="main.js"></script>
 </html>

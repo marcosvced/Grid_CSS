@@ -1,0 +1,7 @@
+[class*='__list'] .a-list__item {
+    margin-bottom: 8px;
+}
+
+[class*='__list'].-list-code .a-list__item {
+    font-family: 'Roboto Mono', monospace;
+}

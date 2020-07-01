@@ -1,0 +1,41 @@
+[class*='a-icon'] {
+    display: block;
+    background-image: var(--icon-url);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+.a-icon.-feather {
+    --icon-url: url('../../icons/feather.svg');
+}
+
+.a-icon.-pen-tool {
+    --icon-url: url('../../icons/pen-tool.svg');
+}
+
+.a-icon.-watch {
+    --icon-url: url('../../icons/watch.svg');
+}
+
+.a-icon.-arrow-right {
+    --icon-url: url('../../icons/arrow-right.svg');
+}
+
+.a-icon.-layers {
+    --icon-url: url('../../icons/layers.svg');
+}
+
+.a-icon.-grid {
+    --icon-url: url('../../icons/grid.svg');
+}
+
+.a-icon.-tool {
+    --icon-url: url('../../icons/tool.svg');
+}
+
+.a-icon.-smile {
+    --icon-url: url('../../icons/smile.png');
+}
