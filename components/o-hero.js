@@ -3,7 +3,7 @@ const OHero = Vue.component('o-hero', {
      <section class="o-hero -mb-5">
         <div class="m-hero__wrapper -container">
             <div class="-display-row -gap -wrap -justify-between -align-start">
-                <div class="m-hero__title -display-column -col-12 -remove-gap -lg-col-8 -lg-restore-gap">
+                <div class="m-hero__title -display-column -col-12 -remove-gap -ip-col-7 -lg-restore-gap">
                     <h1 class="a-hero__title">
                         Aguia<br/> Design System
                     </h1>
@@ -19,7 +19,7 @@ const OHero = Vue.component('o-hero', {
                         <a class="github-button" href="https://github.com/marcosvced/Aguia-Design/fork" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork marcosvced/Aguia-Design on GitHub">Fork</a>
                     </div>
                 </div>
-                <div class="m-hero__content -col-12 -md-col-7 -lg-col-4">
+                <div class="m-hero__content -col-12 -md-col-7 -ip-col-5">
                     <header class="m-header -col-12 -mb-2">
                         <p class="a-header__abstract">INTRODUCTION</p>
                         <h2 class="a-header__tile">A simple responsive framework</h2>
