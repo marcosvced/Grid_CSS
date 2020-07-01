@@ -29,7 +29,7 @@ const OHero = Vue.component('o-hero', {
                         </p>
                     </header>
                     <a class="a-button -btn-link" @click="download">Download <i class="a-icon -arrow-right"></i></a>
-                    <p>or <code class="a-code -code-inline -dark">npm i @devler/aguia</code></p>
+                    <p>or <code class="a-code -code-inline -dark">npm i @devler/aguia-css</code></p>
                 </div>
             </div>
         </div>
