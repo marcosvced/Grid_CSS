@@ -3,7 +3,7 @@ const OHero = Vue.component('o-hero', {
      <section class="o-hero -mb-5">
         <div class="m-hero__wrapper -container">
             <div class="-display-row -gap -wrap -justify-between -align-start">
-                <div class="m-hero__title -display-column -col-12 -remove-gap -ip-col-7 -lg-restore-gap">
+                <div class="m-hero__title -display-column -col-12 -ip-col-7">
                     <h1 class="a-hero__title">
                         Aguia<br/> Design System
                     </h1>
@@ -51,7 +51,7 @@ const OHero = Vue.component('o-hero', {
             const url = window.URL.createObjectURL(new Blob([response.data]))
             const link = document.createElement('a')
             link.href = url
-            link.setAttribute('download', 'aguia@1.3.3.zip') //or any other extension
+            link.setAttribute('download', 'aguia@1.4.0.zip') //or any other extension
             document.body.appendChild(link)
             link.click()
         },

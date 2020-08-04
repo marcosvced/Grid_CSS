@@ -11,7 +11,7 @@ const OFlexModifiers = Vue.component('o-flex-modifiers', {
             <p class="a-flex-modifiers__text">Use align-items utilities on flexbox containers to change the alignment of flex items on the cross axis (the y-axis to start, x-axis if flex-direction: column).<br/>Choose from start, end, center, baseline, or stretch (browser default).</p>
         </div>
         <div class="-display-row -gap -wrap">
-            <div class="m-flex-modifiers-wrapper -display-row -flex-box -align-start -mb-1 -col-12 -remove-gap -ip-col-4 -ip-restore-gap">
+            <div class="m-flex-modifiers-wrapper -display-row -flex-box -align-start -mb-1 -col-12 -ip-col-4">
                 <p class="a-text">
                     -align-start
                 </p>
@@ -19,7 +19,7 @@ const OFlexModifiers = Vue.component('o-flex-modifiers', {
                     -align-start
                 </p>
             </div>
-            <div class="m-flex-modifiers-wrapper -display-row -flex-box -align-center -mb-1 -col-12 -remove-gap -ip-col-4 -ip-restore-gap">
+            <div class="m-flex-modifiers-wrapper -display-row -flex-box -align-center -mb-1 -col-12 -ip-col-4">
                 <p class="a-text">
                     -align-center
                 </p>
@@ -40,7 +40,7 @@ const OFlexModifiers = Vue.component('o-flex-modifiers', {
             <p class="a-flex-modifiers__text">Use justify-content utilities on flexbox containers to change the alignment of flex items on the main axis (the x-axis to start, y-axis if flex-direction: column).<br/>Choose from start, end, center, etc.</p>
         </div>
         <div class="-display-row -gap -wrap">
-            <div class="m-flex-modifiers-wrapper -display-row -flex-box -justify-start -align-center -mb-1 -col-12 -remove-gap -ip-col-4 -ip-restore-gap">
+            <div class="m-flex-modifiers-wrapper -display-row -flex-box -justify-start -align-center -mb-1 -col-12 -ip-col-4">
                 <p class="a-text">
                     -justify-start
                 </p>
@@ -48,7 +48,7 @@ const OFlexModifiers = Vue.component('o-flex-modifiers', {
                     -justify-start
                 </p>
             </div>
-            <div class="m-flex-modifiers-wrapper -display-row -flex-box -justify-center -align-center -mb-1 -col-12 -remove-gap -ip-col-4 -ip-restore-gap">
+            <div class="m-flex-modifiers-wrapper -display-row -flex-box -justify-center -align-center -mb-1 -col-12 -ip-col-4">
                 <p class="a-text">
                     -justify-center
                 </p>
@@ -66,7 +66,7 @@ const OFlexModifiers = Vue.component('o-flex-modifiers', {
             </div>
         </div>
         <div class="-display-none -md-display-row -md-gap -md-wrap">
-            <div class="m-flex-modifiers-wrapper -display-row -flex-box -justify-around -align-center -mb-1 -col-12 -remove-gap -ip-col-6 -ip-restore-gap">
+            <div class="m-flex-modifiers-wrapper -display-row -flex-box -justify-around -align-center -mb-1 -col-12 -ip-col-6">
                 <p class="a-text">
                     -justify-around
                 </p>
