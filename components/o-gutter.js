@@ -4,7 +4,7 @@ const OGutter = Vue.component('o-gutter', {
         <header class="m-header -col-12 -mb-4">
             <h2 class="a-header__tile">Grid with gap</h2>
             <p class="a-header__description -col-12 -lg-col-7">
-                By default the grid doesn't have a gutter but to space the columns Aguia has the modifier <code class="a-code -code-inline">-gap</code> which add a gap o .75rem between columns.
+                By default the grid doesn't have a gutter but to space the columns Aguia has the modifier <code class="a-code -code-inline">-gap</code> which adds a gap o .75rem between columns.
             </p>
         </header>
         <div class="m-grid-wrapper -display-row -gap">
@@ -62,7 +62,7 @@ const OGutter = Vue.component('o-gutter', {
         </div>
         <div class="m-text__wrapper -pt-5">
             <p class="a-gutter__text">
-                It must be use at the same level of <code class="a-code -code-inline">-display-row</code> or <code class="a-code -code-inline">-display-row-reverse</code>
+                It must be used at the same level of <code class="a-code -code-inline">-display-row</code> or <code class="a-code -code-inline">-display-row-reverse</code>
             </p>
         </div>
         <pre class="-mb-4">
