@@ -24,8 +24,8 @@ const OHero = Vue.component('o-hero', {
                         <p class="a-header__abstract">INTRODUCTION</p>
                         <h2 class="a-header__tile">A simple responsive framework</h2>
                         <p class="a-header__description">
-                            that offers a starting point with which you don't need to fight with the unnecessary default styles of other frameworks.
-                            With which you can organize your code using the ABEM methodology that you can customize as never before.  
+                            that offers a starting point in which you won't need to fight with the unnecessary default styles of other frameworks.
+                            With this tool you will be able to organize your code using the ABEM methodology that you can customize as never before.  
                         </p>
                     </header>
                     <a class="a-button -btn-link" @click="download">Download <i class="a-icon -arrow-right"></i></a>

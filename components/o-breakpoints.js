@@ -4,7 +4,7 @@ const OBreakpoints = Vue.component('o-breakpoints', {
         <header class="m-header -col-12 -mb-2">
             <h2 class="a-header__tile">Grid breakpoints</h2>
             <p class="a-header__description -col-12 -lg-col-9">
-               Aguia use media queries to serve its scalable layout.<br/> A same as other frameworks it have a different prefix by media query. Which could be use as prefix of any modifier class.<br/> 
+               Aguia uses media queries to serve its scalable layout.<br/> In the same way as other frameworks it have a different prefix by media query which could be used as prefix of any modifier class.<br/> 
             </p>
             <p class="a-header__description -col-12 -lg-col-9">
              Go ahead, resize the browser.
@@ -37,8 +37,8 @@ const OBreakpoints = Vue.component('o-breakpoints', {
         </div>
         <div class="m-text__wrapper -pt-5">
             <p class="a-gutter__text">
-                The media queries prefixes could be use as prefix of any Aguia modifiers class.<br/>
-                In this block of code the prefixes are use to change the display and column size.
+                The media queries prefixes can be used as a prefix of any Aguia modifiers class.<br/>
+                In this block of code we use the prefixes to change the display and column size.
             </p>
         </div>
         <pre>

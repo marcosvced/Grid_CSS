@@ -30,7 +30,7 @@ const OTargets = Vue.component('o-targets', {
                     Easy <br/> quick start.
                 </h2>
                 <p class="a-target__subtitle">
-                    Quick start without compiling and installing. No JS, no Third party libraries.
+                    Quick start with no need of compiling and installing. No JS, no Third party libraries.
                 </p>
             </div>
         </div>

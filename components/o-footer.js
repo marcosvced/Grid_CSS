@@ -21,6 +21,9 @@ const OFooter = Vue.component('o-footer', {
                    .
                </small>
             </div>
+             <div class="a-footer__subtitle">
+               <small>Translated by Ángela Matos Castellvi.</small>
+            </div>
             <div class="a-footer__subtitle">
                <small>Currently v1.0.0. Code licensed MIT.</small>
             </div>

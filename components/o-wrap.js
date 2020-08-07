@@ -4,7 +4,7 @@ const OWrap = Vue.component('o-wrap', {
         <header class="m-header -col-12 -mb-2">
             <h2 class="a-header__tile">Responsive with wrap rows</h2>
             <p class="a-header__description -col-12 -lg-col-9">
-                The <code class="a-code -code-inline">-wrap</code> modifier breaks the row when it get the maximum of columns.
+                The <code class="a-code -code-inline">-wrap</code> modifier breaks the row when it gets the maximum number of columns.
             </p>
             <p class="a-header__description -col-12 -lg-col-9">
                 Resize the browser to see the effect.

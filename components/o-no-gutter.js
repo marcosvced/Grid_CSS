@@ -6,7 +6,7 @@ const ONoGutter = Vue.component('o-no-gutter', {
              <p class="a-header__description -col-12 -lg-col-9">
                 The default grid is a twelve column fluid grid.<br>
                 You can use a <code class="a-code -code-inline">o-container</code> or <code class="a-code -code-inline">-contianer</code> css class which add a with of 1366px that shrinks with the browser or device at smaller sizes.
-                The max width can be change with the variable CSS <code class="a-code -code-inline">--container-size</code> and all columns will resize accordingly.
+                The max width can be changed with the variable CSS <code class="a-code -code-inline">--container-size</code> and all columns will resize according to it.
              </p>
         </header>
         <div class="m-grid-wrapper -display-row">
@@ -64,8 +64,8 @@ const ONoGutter = Vue.component('o-no-gutter', {
         </div>
         <div class="m-text__wrapper -pt-5">
             <p class="a-gutter__text">
-                To use the <code class="a-code -code-inline">-col-</code> modifier it is not necessary to have a parent modifier of <code class="a-code -code-inline">-display-row</code> type. <br/>
-                But you can use the modifier <code class="a-code -code-inline">-display-row</code> to display the columns as Flex-box row.
+                To use the <code class="a-code -code-inline">-col-</code> modifier it is not necessary to have a parent modifier of <code class="a-code -code-inline">-display-row</code> type <br/>
+                but you can use the modifier <code class="a-code -code-inline">-display-row</code> to display the columns as a Flex-box row.
             </p>
         </div>
         <pre>
